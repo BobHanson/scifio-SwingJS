@@ -98,8 +98,14 @@ public class DefaultXMLService extends AbstractService implements XMLService {
 	private static final String XML_SCHEMA_PATH =
 		"http://www.w3.org/2001/XMLSchema";
 
-	private static final SchemaFactory FACTORY = SchemaFactory.newInstance(
-		XML_SCHEMA_PATH);
+	/**
+	 * going to lazy initialization of xerces
+	 * @j2sNative
+	 */
+	private static SchemaFactory FACTORY;
+	private static SchemaFactory getFactory() {
+		return (FACTORY == null ? FACTORY =  SchemaFactory.newInstance(XML_SCHEMA_PATH) : FACTORY);
+	}
 
 	// -- Fields --
 
@@ -504,7 +510,7 @@ public class DefaultXMLService extends AbstractService implements XMLService {
 		Schema schema = schemas.get().get(schemaLocation);
 		if (schema == null) {
 			try {
-				schema = FACTORY.newSchema(schemaLocation.toURL());
+				schema = getFactory().newSchema(schemaLocation.toURL());
 				schemas.get().put(schemaLocation, schema);
 			}
 			catch (MalformedURLException | SAXException exc) {
