@@ -48,6 +48,27 @@ import org.scijava.io.location.FileLocation;
  */
 public class ConvertImg {
 
+	static boolean j2sHeadless = true;
+
+	private static void convertImg(final File file) throws Exception {
+		final Context c = new Context(Context.INIT_SERVICES | Context.INIT_PLUGINS | Context.INIT_NOT_STRICT | Context.INIT_NOT_DEFERRED);
+		final SCIFIOConfig config = new SCIFIOConfig().imgOpenerSetImgModes(
+			ImgMode.ARRAY);
+		System.out.println("reading " + file);
+		Class<?> cl = ImgOpener.class;
+		final ImgPlus<?> img = new ImgOpener(c)
+				.openImgs(new FileLocation(file
+			.getAbsolutePath()), config).get(0);
+
+		String name = img.getName() + ".tif";
+		final String outPath = file.getParent() + File.separator + "out_" + name;
+		System.out.println("saving " + outPath);
+		new ImgSaver(c).saveImg(new FileLocation(outPath), img);
+		System.out.println("saving complete" + outPath);
+		c.dispose();
+		System.out.println("context disposed");
+	}
+
 	public static void main(final String[] args) throws Exception {
 		
 		File file = new File("data/benchmark_v1_2018_x64y64z5c2s1t1.ics");
@@ -60,24 +81,6 @@ public class ConvertImg {
 //		if (result == JFileChooser.APPROVE_OPTION) {
 //			convertImg(opener.getSelectedFile());
 //		}
-	}
-
-	private static void convertImg(final File file) throws Exception {
-		final Context c = new Context();
-		final SCIFIOConfig config = new SCIFIOConfig().imgOpenerSetImgModes(
-			ImgMode.ARRAY);
-		System.out.println("reading " + file);
-		final ImgPlus<?> img = new ImgOpener(c)
-				.openImgs(new FileLocation(file
-			.getAbsolutePath()), config).get(0);
-
-		String name = img.getName() + ".tif";
-		final String outPath = file.getParent() + File.separator + "out_" + name;
-		System.out.println("saving " + outPath);
-		new ImgSaver(c).saveImg(new FileLocation(outPath), img);
-		System.out.println("saving complete" + outPath);
-		c.dispose();
-		System.out.println("context disposed");
 	}
 
 }
