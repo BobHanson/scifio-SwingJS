@@ -41,6 +41,28 @@ Moved two lines of code to straighten out loading
 
 Removed unnecessary check for apache logging (which is a HUGE and complicated set of classes)
 
+8. org.scijava.util.ArrayUtils.willOverflow()
+
+	private static boolean willOverflow(final long v1, final long v2) {
+		/**
+		 * We cannot use Long.MAX_VALUE in SwingJS, or certainly not this way. 
+		 * Overflow is when adding 1 to the product is still the product
+		 * 
+		 * @j2sNative
+		 * 
+		 * 			return v1*v2 == v1*v2+1;
+		 */
+		{
+			return Long.MAX_VALUE / v1 < v2;
+		}
+	}
+
+
+9. SCIFIOCellImgFactory
+
+Could not be implemented in Java 8; unnecessary for java2script? Errors are still there; don't know how to adjust for that.
+
+
 10. The java2script transpiler cannot handle this.<P> in a method call, as in AbstractReader:
 
 		return openPlane(imageIndex, planeIndex, this.<P> castToTypedPlane(plane),
