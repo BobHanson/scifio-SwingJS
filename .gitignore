@@ -9,7 +9,8 @@ test-output
 
 # Maven #
 target/
-
+site/
 # IntelliJ #
 .idea/
 *.iml
+/bin/
