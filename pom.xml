@@ -126,19 +126,19 @@
 	</repositories>
 
 	<dependencies>
-		<!-- SCIFIO dependencies -->
+		<!-- SCIFIO dependencies
 		<dependency>
 			<groupId>io.scif</groupId>
 			<artifactId>scifio-jai-imageio</artifactId>
-		</dependency>
+		</dependency> -->
 
-		<!-- ImageJ dependencies -->
+		<!-- ImageJ dependencies
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>imagej-common</artifactId>
-		</dependency>
+		</dependency> -->
 
-		<!-- ImgLib2 dependencies -->
+		<!-- ImgLib2 dependencies
 		<dependency>
 			<groupId>net.imglib2</groupId>
 			<artifactId>imglib2</artifactId>
@@ -146,13 +146,13 @@
 		<dependency>
 			<groupId>net.imglib2</groupId>
 			<artifactId>imglib2-cache</artifactId>
-		</dependency>
+		</dependency> -->
 
-		<!-- SciJava dependencies -->
+		<!-- SciJava dependencies 
 		<dependency>
 			<groupId>org.scijava</groupId>
 			<artifactId>scijava-common</artifactId>
-		</dependency>
+		</dependency> -->
 
 		<!-- Test scope dependencies -->
 		<dependency>
