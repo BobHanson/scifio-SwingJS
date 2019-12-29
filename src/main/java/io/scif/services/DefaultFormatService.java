@@ -430,9 +430,9 @@ public class DefaultFormatService extends AbstractService implements
 	public void initialize() {
 		// TODO replace with preload implementation.
 		// See https://github.com/scijava/scijava-common/issues/145
-		threadService.run(() -> {
+//		threadService.run(() -> {
 			// Allow this thread to bypass the initialization check
-			threadLock.set(true);
+//			threadLock.set(true);
 
 			formats = new TreeSet<>();
 			formatMap = new HashMap<>();
@@ -443,26 +443,28 @@ public class DefaultFormatService extends AbstractService implements
 			metadataMap = new HashMap<>();
 			formatCache = new WeakHashMap<>();
 
-			// HACK: Wait until the FormatService is available from the context
-			// before initializing all the formats. Otherwise, any Format that
-			// has the FormatService as a parameter will fail to inject.
-			// TODO: Fix this to be less nightmarish.
-			while (context().getService(DefaultFormatService.class) == null) {
-				try {
-					Thread.sleep(50);
-				}
-				catch (final InterruptedException exc) {}
-			}
-
+//			// HACK: Wait until the FormatService is available from the context
+//			// before initializing all the formats. Otherwise, any Format that
+//			// has the FormatService as a parameter will fail to inject.
+//			// TODO: Fix this to be less nightmarish.
+//			while (context().getService(DefaultFormatService.class) == null) {
+//				try {
+//					System.out.println("Waiting for getService(DefaultFormatService.class)");
+//					Thread.sleep(50);
+//				}
+//				catch (final InterruptedException exc) {}
+//			}
+//
 			// Initialize format information
-			for (final Format format : pluginService
-					.createInstancesOfType(Format.class))
+			List<Format> f = pluginService
+					.createInstancesOfType(Format.class);
+			for (final Format format : f)
 			{
 				addFormat(format);
 			}
 
 			initialized = true;
-		});
+//		});
 	}
 
 	// -- Private Methods --
@@ -527,20 +529,20 @@ public class DefaultFormatService extends AbstractService implements
 	 * initialization thread to complete.
 	 */
 	private void checkLock() {
-		if (!(initialized || threadLock.get())) {
-			synchronized (this) {
-				// Double locked to avoid missing signals
-				while (!(initialized || threadLock.get())) {
-					try {
-						// Limit excessive polling
-						Thread.sleep(100);
-					}
-					catch (final InterruptedException e) {
-						logService.error("DefaultFormatService: " +
-							"Interrupted while waiting for format initialization.", e);
-					}
-				}
-			}
-		}
+//		if (!(initialized || threadLock.get())) {
+//			synchronized (this) {
+//				// Double locked to avoid missing signals
+//				while (!(initialized || threadLock.get())) {
+//					try {
+//						// Limit excessive polling
+//						Thread.sleep(100);
+//					}
+//					catch (final InterruptedException e) {
+//						logService.error("DefaultFormatService: " +
+//							"Interrupted while waiting for format initialization.", e);
+//					}
+//				}
+//			}
+//		}
 	}
 }
