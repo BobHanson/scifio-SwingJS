@@ -64,7 +64,7 @@ public class ConvertImg {
 		final String outPath = file.getParent() + File.separator + "out_" + name;
 		System.out.println("saving " + outPath);
 		new ImgSaver(c).saveImg(new FileLocation(outPath), img);
-		System.out.println("saving complete");
+		System.out.println("saving complete " + outPath);
 		c.dispose();
 		System.out.println("context disposed");
 	}
