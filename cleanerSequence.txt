@@ -1,0 +1,1514 @@
+//// start new Context() /////
+
+reading C:\Users\hansonr\git\scifio\data\benchmark_v1_2018_x64y64z5c2s1t1.ics
+Index reading from file:/C:/Users/hansonr/git/scifio/target/classes/META-INF/json/org.scijava.plugin.Plugin
+Index read io.scif.app.SCIFIOApp {name=SCIFIO, type=org.scijava.app.App}
+Index read io.scif.codec.Base64Codec {type=io.scif.codec.Codec}
+Index read io.scif.codec.DefaultCodecService {type=org.scijava.service.Service}
+Index read io.scif.codec.HuffmanCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.JPEG2000Codec {type=io.scif.codec.Codec}
+Index read io.scif.codec.JPEGCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.LosslessJPEGCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.LuraWaveCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.LZWCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.MJPBCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.MSRLECodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.MSVideoCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.NikonCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.PackbitsCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.PassthroughCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.QTRLECodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.RPZACodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.ZlibCodec {type=io.scif.codec.Codec}
+Index read io.scif.commands.OpenDataset {menu=[{label=File, weight=0.0}, {label=Import}, {label=Image... }], type=org.scijava.command.Command}
+Index read io.scif.commands.SaveAsImage {attrs=[{name=no-legacy}], menu=[{label=File, mnemonic=f, weight=0.0}, {accelerator=shift ^S, label=Save As..., weight=21.0}], type=org.scijava.command.Command}
+Index read io.scif.commands.SaveImage {attrs=[{name=no-legacy}], menu=[{label=File, mnemonic=f, weight=0.0}, {accelerator=^S, label=Save, mnemonic=s, weight=20.0}], type=org.scijava.command.Command}
+Index read io.scif.DefaultMetadataService {type=org.scijava.service.Service}
+Index read io.scif.DefaultTranslator {priority=-10000.0, type=io.scif.Translator}
+Index read io.scif.filters.ChannelFiller {type=io.scif.filters.Filter}
+Index read io.scif.filters.DimensionSwapper {type=io.scif.filters.Filter}
+Index read io.scif.filters.FileStitcher {type=io.scif.filters.Filter}
+Index read io.scif.filters.MinMaxFilter {type=io.scif.filters.Filter}
+Index read io.scif.filters.PlaneSeparator {type=io.scif.filters.Filter}
+Index read io.scif.filters.PlaneSeparatorMetadata {type=io.scif.filters.MetadataWrapper}
+Index read io.scif.formats.APNGFormat$APNGTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.APNGFormat {name=Animated PNG, type=io.scif.Format}
+Index read io.scif.formats.AVIFormat$Translator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.AVIFormat {name=Audio Video Interleave, type=io.scif.Format}
+Index read io.scif.formats.BMPFormat {name=Windows Bitmap, type=io.scif.Format}
+Index read io.scif.formats.DICOMFormat {name=DICOM, type=io.scif.Format}
+Index read io.scif.formats.EPSFormat$EPSTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.EPSFormat {name=Encapsulated PostScript, type=io.scif.Format}
+Index read io.scif.formats.FITSFormat {name=Flexible Image Transport System, type=io.scif.Format}
+Index read io.scif.formats.GIFFormat {name=Graphics Interchange Format, type=io.scif.Format}
+Index read io.scif.formats.ICSFormat$ICSTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.ICSFormat {name=Image Cytometry Standard, type=io.scif.Format}
+Index read io.scif.formats.ImageIOFormat$ImageIOTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.JPEG2000Format {name=JPEG-2000, type=io.scif.Format}
+Index read io.scif.formats.JPEGFormat {name=JPEG, type=io.scif.Format}
+Index read io.scif.formats.JPEGTileFormat {name=Tile JPEG, priority=-100.0, type=io.scif.Format}
+Index read io.scif.formats.KontronFormat {name=Kontron, type=io.scif.Format}
+Index read io.scif.formats.MicromanagerFormat$MicromanagerTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.MicromanagerFormat {name=Micro-Manager, type=io.scif.Format}
+Index read io.scif.formats.MinimalTIFFFormat {name=Minimal TIFF, priority=-10000.0, type=io.scif.Format}
+Index read io.scif.formats.MNGFormat {name=Multiple Network Graphics, type=io.scif.Format}
+Index read io.scif.formats.NRRDFormat {name=NRRD, type=io.scif.Format}
+Index read io.scif.formats.OBFFormat {name=OBF, type=io.scif.Format}
+Index read io.scif.formats.PCXFormat {name=PCX, type=io.scif.Format}
+Index read io.scif.formats.PGMFormat {name=Portable Gray Map, type=io.scif.Format}
+Index read io.scif.formats.qt.DefaultQTJavaService {type=org.scijava.service.Service}
+Index read io.scif.formats.qt.LegacyQTFormat$LegacyQTTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.qt.LegacyQTFormat {name=QuickTime, priority=-100.0, type=io.scif.Format}
+Index read io.scif.formats.qt.NativeQTFormat$NativeQTTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.qt.NativeQTFormat {name=QuickTime, type=io.scif.Format}
+Index read io.scif.formats.qt.PICTFormat {name=PICT, type=io.scif.Format}
+Index read io.scif.formats.ScancoISQFormat {name=Scanco ISQ, type=io.scif.Format}
+Index read io.scif.formats.StratecPQCTFormat {name=Stratec pQCT, type=io.scif.Format}
+Index read io.scif.formats.TestImgFormat$TestImgTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.TestImgFormat {name=Simulated data, type=io.scif.Format}
+Index read io.scif.formats.tiff.DefaultTiffService {type=org.scijava.service.Service}
+Index read io.scif.formats.TIFFFormat$TIFFTranslator {priority=-9999.0, type=io.scif.Translator}
+Index read io.scif.formats.TIFFFormat {name=Tagged Image File Format, priority=-9999.0, type=io.scif.Format}
+Index read io.scif.formats.TIFFJAIFormat {name=Tagged Image File Format, priority=-10001.0, type=io.scif.Format}
+Index read io.scif.gui.DefaultGUIService {type=org.scijava.service.Service}
+Index read io.scif.img.converters.ArrayDataAccessConverter {name=ArrayDataAccess, type=io.scif.img.converters.PlaneConverter}
+Index read io.scif.img.converters.DefaultPlaneConverterService {type=org.scijava.service.Service}
+Index read io.scif.img.converters.PlanarAccessConverter {name=PlanarAccess, type=io.scif.img.converters.PlaneConverter}
+Index read io.scif.img.converters.RandomAccessConverter {name=Default, type=io.scif.img.converters.PlaneConverter}
+Index read io.scif.img.DefaultImgUtilityService {type=org.scijava.service.Service}
+Index read io.scif.img.ImgPlusCtxCleaningProvider {type=io.scif.refs.RefProvider}
+Index read io.scif.io.DatasetIOPlugin {priority=-100.0, type=org.scijava.io.IOPlugin}
+Index read io.scif.io.location.TestImgLocationResolver {priority=100.0, type=org.scijava.io.location.LocationResolver}
+Index read io.scif.refs.DefaultRefManagerService {type=org.scijava.service.Service}
+Index read io.scif.SCIFIO {type=org.scijava.Gateway}
+Index read io.scif.services.DefaultDatasetIOService {type=org.scijava.service.Service}
+Index read io.scif.services.DefaultFilePatternService {type=org.scijava.service.Service}
+Index read io.scif.services.DefaultFormatService {type=org.scijava.service.Service}
+Index read io.scif.services.DefaultInitializeService {priority=-100.0, type=org.scijava.service.Service}
+Index read io.scif.services.DefaultTranslatorService {type=org.scijava.service.Service}
+Index read io.scif.services.JAIIIOServiceImpl {type=org.scijava.service.Service}
+Index read io.scif.xml.DefaultXMLService {type=org.scijava.service.Service}
+Index read test-io.scif.util.DefaultSampleFilesService {type=org.scijava.service.Service}
+Index reading from jar:file:/C:/Users/hansonr/.m2/repository/org/scijava/scijava-io-http/0.2.0/scijava-io-http-0.2.0.jar!/META-INF/json/org.scijava.plugin.Plugin
+Index read org.scijava.io.http.HTTPLocationResolver {type=org.scijava.io.location.LocationResolver}
+Index read org.scijava.io.http.HTTPHandle {type=org.scijava.io.handle.DataHandle}
+Index reading from jar:file:/C:/Users/hansonr/.m2/repository/org/scijava/scijava-common/2.77.0/scijava-common-2.77.0.jar!/META-INF/json/org.scijava.plugin.Plugin
+Index read org.scijava.prefs.DefaultPrefService {type=org.scijava.service.Service}
+Index read org.scijava.event.DefaultEventHistory {type=org.scijava.service.Service}
+Index read org.scijava.event.DefaultEventService {priority=100000.0, type=org.scijava.service.Service}
+Index read org.scijava.text.io.TextIOPlugin {priority=-101.0, type=org.scijava.io.IOPlugin}
+Index read org.scijava.text.DefaultTextService {type=org.scijava.service.Service}
+Index read org.scijava.input.DefaultInputService {type=org.scijava.service.Service}
+Index read org.scijava.object.DefaultObjectService {type=org.scijava.service.Service}
+Index read org.scijava.run.DefaultRunService {type=org.scijava.service.Service}
+Index read org.scijava.run.console.RunArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.io.handle.DummyHandle {type=org.scijava.io.handle.DataHandle}
+Index read org.scijava.io.handle.FileHandle {type=org.scijava.io.handle.DataHandle}
+Index read org.scijava.io.handle.DefaultDataHandleService {type=org.scijava.service.Service}
+Index read org.scijava.io.handle.BytesHandle {type=org.scijava.io.handle.DataHandle}
+Index read org.scijava.io.DefaultRecentFileService {type=org.scijava.service.Service}
+Index read org.scijava.io.location.DefaultLocationService {type=org.scijava.service.Service}
+Index read org.scijava.io.location.FileLocationResolver {type=org.scijava.io.location.LocationResolver}
+Index read org.scijava.io.DefaultIOService {type=org.scijava.service.Service}
+Index read org.scijava.io.console.OpenArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.io.nio.DefaultNIOService {type=org.scijava.service.Service}
+Index read org.scijava.ui.dnd.FileDragAndDropHandler {priority=-100.0, type=org.scijava.ui.dnd.DragAndDropHandler}
+Index read org.scijava.ui.dnd.ScriptFileDragAndDropHandler {type=org.scijava.ui.dnd.DragAndDropHandler}
+Index read org.scijava.ui.dnd.DefaultDragAndDropService {type=org.scijava.service.Service}
+Index read org.scijava.ui.dnd.ListDragAndDropHandler {type=org.scijava.ui.dnd.DragAndDropHandler}
+Index read org.scijava.ui.headless.HeadlessDisplayViewer {type=org.scijava.ui.viewer.DisplayViewer}
+Index read org.scijava.ui.headless.HeadlessUI {name=headless, priority=-10000.0, type=org.scijava.ui.UserInterface}
+Index read org.scijava.ui.FilePreprocessor {priority=-9999.5, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.ui.UIPreprocessor {priority=10000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.ui.DefaultUIService {type=org.scijava.service.Service}
+Index read org.scijava.ui.FileListPreprocessor {priority=-9999.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.ui.console.UIArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.ui.console.HeadlessArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.ui.console.ShowUIArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.download.DefaultDownloadService {type=org.scijava.service.Service}
+Index read org.scijava.welcome.DefaultWelcomeService {type=org.scijava.service.Service}
+Index read org.scijava.app.SciJavaApp {name=SciJava, priority=-100.0, type=org.scijava.app.App}
+Index read org.scijava.app.DefaultStatusService {type=org.scijava.service.Service}
+Index read org.scijava.app.DefaultAppService {type=org.scijava.service.Service}
+Index read org.scijava.script.run.ScriptCodeRunner {type=org.scijava.run.CodeRunner}
+Index read org.scijava.script.DefaultScriptService {type=org.scijava.service.Service}
+Index read org.scijava.script.DefaultScriptHeaderService {type=org.scijava.service.Service}
+Index read org.scijava.script.process.ParameterScriptProcessor {type=org.scijava.script.process.ScriptProcessor}
+Index read org.scijava.script.process.ScriptDirectiveScriptProcessor {priority=100.0, type=org.scijava.script.process.ScriptProcessor}
+Index read org.scijava.script.process.ShebangScriptProcessor {type=org.scijava.script.process.ScriptProcessor}
+Index read org.scijava.script.process.DefaultScriptProcessorService {type=org.scijava.service.Service}
+Index read org.scijava.script.console.RunScriptArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.main.DefaultMainService {type=org.scijava.service.Service}
+Index read org.scijava.main.run.MainCodeRunner {priority=-100.0, type=org.scijava.run.CodeRunner}
+Index read org.scijava.main.console.MainArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.tool.DefaultToolService {type=org.scijava.service.Service}
+Index read org.scijava.SciJava {type=org.scijava.Gateway}
+Index read org.scijava.platform.DefaultPlatformService {type=org.scijava.service.Service}
+Index read org.scijava.platform.DefaultAppEventService {priority=-100.0, type=org.scijava.service.Service}
+Index read org.scijava.platform.DefaultPlatform {name=Default, priority=-10000.0, type=org.scijava.platform.Platform}
+Index read org.scijava.widget.DefaultWidgetService {type=org.scijava.service.Service}
+Index read org.scijava.command.run.CommandCodeRunner {type=org.scijava.run.CodeRunner}
+Index read org.scijava.command.DefaultCommandService {type=org.scijava.service.Service}
+Index read org.scijava.command.console.RunArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.task.DefaultTaskService {type=org.scijava.service.Service}
+Index read org.scijava.thread.DefaultThreadService {type=org.scijava.service.Service}
+Index read org.scijava.convert.ArrayConverters$BoolArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$BoolArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.FileListConverters$StringToFileArrayConverter {priority=0.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$BigIntegerToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$IntArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToDoubleConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToBigIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$LongArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToLongConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$FloatToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.DefaultConvertService {type=org.scijava.service.Service}
+Index read org.scijava.convert.NumberConverters$ByteToFloatConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToLongConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$IntegerToDoubleConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.FileListConverters$StringToFileConverter {priority=0.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToFloatConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$ByteArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.DefaultConverter {priority=-1000000.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.FileListConverters$FileArrayToStringConverter {priority=0.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$LongArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$ShortArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$IntArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToBigIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$LongToBigIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$LongToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$FloatToDoubleConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$IntegerToBigIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.FileListConverters$FileToStringConverter {priority=0.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$DoubleArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$IntegerToLongConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$IntegerToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$CharArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NullConverter {priority=1.0E300, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$FloatArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$FloatArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.CastingConverter {priority=1000000.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$DoubleArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$CharArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToDoubleConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$ByteArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$ShortArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToShortConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$DoubleToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.parse.DefaultParseService {type=org.scijava.service.Service}
+Index read org.scijava.log.StderrLogService {priority=-100.0, type=org.scijava.service.Service}
+Index read org.scijava.module.DefaultModuleService {type=org.scijava.service.Service}
+Index read org.scijava.module.run.ModuleCodeRunner {type=org.scijava.run.CodeRunner}
+Index read org.scijava.module.process.InitPreprocessor {priority=100.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.DebugPostprocessor {priority=1.0E300, type=org.scijava.module.process.PostprocessorPlugin}
+Index read org.scijava.module.process.GatewayPreprocessor {priority=20000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.DefaultValuePreprocessor {priority=10000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.ServicePreprocessor {priority=20000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.ValidityPreprocessor {priority=30000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.CheckInputsPreprocessor {priority=-10002.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.LoggerPreprocessor {type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.DebugPreprocessor {priority=1.0E300, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.LoadInputsPreprocessor {priority=-9999.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.SaveInputsPreprocessor {priority=-10001.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.display.DisplayPostprocessor {priority=-10000.0, type=org.scijava.module.process.PostprocessorPlugin}
+Index read org.scijava.display.DefaultTextDisplay {priority=-100.0, type=org.scijava.display.Display}
+Index read org.scijava.display.ActiveDisplayPreprocessor {priority=10000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.display.DefaultDisplayService {type=org.scijava.service.Service}
+Index read org.scijava.menu.DefaultMenuService {type=org.scijava.service.Service}
+Index read org.scijava.cache.DefaultCacheService {priority=-10000.0, type=org.scijava.service.Service}
+Index read org.scijava.console.SystemPropertyArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.console.DefaultConsoleService {type=org.scijava.service.Service}
+Index read org.scijava.startup.DefaultStartupService {type=org.scijava.service.Service}
+Index read org.scijava.options.DefaultOptionsService {type=org.scijava.service.Service}
+Index read org.scijava.plugin.DefaultPluginService {type=org.scijava.service.Service}
+PluginIndex found 221
+ClassUtils scanning org.scijava.Contextual for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.Contextual for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.AbstractContextual for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.AbstractContextual for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.service.ServiceHelper for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.service.ServiceHelper for org.scijava.plugin.Parameter
+Context injecting context into org.scijava.service.ServiceHelper
+ServiceHelper getPlugins returned 56
+[ERROR] Invalid service: class='test-io.scif.util.DefaultSampleFilesService', priority=0.0, enabled=true, pluginType=Service
+org.scijava.InstantiableException: Class not found: test-io.scif.util.DefaultSampleFilesService
+	at org.scijava.plugin.PluginInfo.loadClass(PluginInfo.java:293)
+	at org.scijava.service.ServiceHelper.findServiceClasses(ServiceHelper.java:388)
+	at org.scijava.service.ServiceHelper.<init>(ServiceHelper.java:121)
+	at org.scijava.Context.<init>(Context.java:280)
+	at org.scijava.Context.<init>(Context.java:237)
+	at org.scijava.Context.<init>(Context.java:133)
+	at org.scijava.Context.<init>(Context.java:120)
+	at org.scijava.Context.<init>(Context.java:109)
+	at io.scif.img.ConvertImg.convertImg(ConvertImg.java:66)
+	at io.scif.img.ConvertImg.main(ConvertImg.java:55)
+Caused by: java.lang.IllegalArgumentException: Cannot load class: test-io.scif.util.DefaultSampleFilesService
+	at org.scijava.util.Types.iae(Types.java:967)
+	at org.scijava.util.Types.load(Types.java:222)
+	at org.scijava.plugin.PluginInfo.loadClass(PluginInfo.java:287)
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: test-io.scif.util.DefaultSampleFilesService
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.scijava.util.Types.load(Types.java:213)
+	... 10 more
+ServiceHelper found 55 classes
+
+ServiceHelper loadService org.scijava.event.DefaultEventService
+ClassUtils scanning org.scijava.plugin.SciJavaPlugin for org.scijava.plugin.Parameter
+ClassUtils scanning java.lang.Comparable for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.Prioritized for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.HasPluginInfo for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.log.Logged for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.Identifiable for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.Locatable for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.Versioned for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.RichPlugin for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.AbstractRichPlugin for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.Initializable for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.Disposable for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.service.Service for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.service.AbstractService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.service.SciJavaService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.event.EventService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.event.DefaultEventService for org.scijava.plugin.Parameter
+
+ServiceHelper loadService org.scijava.log.LogService
+ClassUtils scanning org.scijava.log.Logger for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.log.LogService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.log.AbstractLogService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.log.StderrLogService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.SciJavaPlugin for org.scijava.event.EventHandler
+ClassUtils scanning java.lang.Comparable for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.Prioritized for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.HasPluginInfo for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.log.Logged for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.Identifiable for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.Locatable for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.Versioned for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.RichPlugin for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.AbstractRichPlugin for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.Initializable for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.Disposable for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.service.Service for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.service.AbstractService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.service.SciJavaService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.log.Logger for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.log.LogService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.log.AbstractLogService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.log.StderrLogService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.log.StderrLogService
+ObjectIndex for org.scijava.service.Service add org.scijava.log.StderrLogService
+
+ServiceHelper loadService org.scijava.thread.ThreadService
+ClassUtils scanning java.util.concurrent.ThreadFactory for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.thread.ThreadService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.thread.DefaultThreadService for org.scijava.plugin.Parameter
+ClassUtils scanning java.util.concurrent.ThreadFactory for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.thread.ThreadService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.thread.DefaultThreadService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.thread.DefaultThreadService
+ObjectIndex for org.scijava.service.Service add org.scijava.thread.DefaultThreadService
+ClassUtils scanning org.scijava.event.EventService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.event.DefaultEventService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.event.DefaultEventService
+ObjectIndex for org.scijava.service.Service add org.scijava.event.DefaultEventService
+
+ServiceHelper loadService io.scif.DefaultMetadataService
+ClassUtils scanning io.scif.SCIFIOService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.MetadataService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.DefaultMetadataService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.SCIFIOService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.MetadataService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.DefaultMetadataService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.DefaultMetadataService
+ObjectIndex for org.scijava.service.Service add io.scif.DefaultMetadataService
+
+ServiceHelper loadService io.scif.codec.DefaultCodecService
+ClassUtils scanning org.scijava.plugin.PTService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.AbstractPTService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.SingletonService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.AbstractSingletonService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.codec.CodecService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.codec.DefaultCodecService for org.scijava.plugin.Parameter
+
+ServiceHelper loadService org.scijava.plugin.PluginService
+ClassUtils scanning org.scijava.plugin.PluginService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.DefaultPluginService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.PluginService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.DefaultPluginService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.plugin.DefaultPluginService
+ObjectIndex for org.scijava.service.Service add org.scijava.plugin.DefaultPluginService
+
+ServiceHelper loadService org.scijava.object.ObjectService
+ClassUtils scanning org.scijava.object.ObjectService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.object.DefaultObjectService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.object.ObjectService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.object.DefaultObjectService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.object.DefaultObjectService
+ObjectIndex for org.scijava.service.Service add org.scijava.object.DefaultObjectService
+ClassUtils scanning org.scijava.plugin.PTService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.AbstractPTService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.SingletonService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.AbstractSingletonService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.CodecService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.DefaultCodecService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.codec.DefaultCodecService
+ObjectIndex for org.scijava.service.Service add io.scif.codec.DefaultCodecService
+
+ServiceHelper loadService io.scif.formats.qt.DefaultQTJavaService
+ClassUtils scanning io.scif.formats.qt.QTJavaService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.qt.DefaultQTJavaService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.qt.QTJavaService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.qt.DefaultQTJavaService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.formats.qt.DefaultQTJavaService
+ObjectIndex for org.scijava.service.Service add io.scif.formats.qt.DefaultQTJavaService
+
+ServiceHelper loadService io.scif.formats.tiff.DefaultTiffService
+ClassUtils scanning io.scif.formats.tiff.TiffService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.tiff.DefaultTiffService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.tiff.TiffService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.tiff.DefaultTiffService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.formats.tiff.DefaultTiffService
+ObjectIndex for org.scijava.service.Service add io.scif.formats.tiff.DefaultTiffService
+
+ServiceHelper loadService io.scif.gui.DefaultGUIService
+ClassUtils scanning io.scif.gui.GUIService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.gui.DefaultGUIService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.gui.GUIService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.gui.DefaultGUIService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.gui.DefaultGUIService
+ObjectIndex for org.scijava.service.Service add io.scif.gui.DefaultGUIService
+
+ServiceHelper loadService io.scif.img.DefaultImgUtilityService
+ClassUtils scanning io.scif.img.ImgUtilityService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.img.DefaultImgUtilityService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.img.ImgUtilityService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.DefaultImgUtilityService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.img.DefaultImgUtilityService
+ObjectIndex for org.scijava.service.Service add io.scif.img.DefaultImgUtilityService
+
+ServiceHelper loadService io.scif.img.converters.DefaultPlaneConverterService
+ClassUtils scanning io.scif.img.converters.PlaneConverterService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.img.converters.DefaultPlaneConverterService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.img.converters.PlaneConverterService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.converters.DefaultPlaneConverterService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.img.converters.DefaultPlaneConverterService
+ObjectIndex for org.scijava.service.Service add io.scif.img.converters.DefaultPlaneConverterService
+
+ServiceHelper loadService io.scif.refs.DefaultRefManagerService
+ClassUtils scanning io.scif.refs.RefManagerService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.refs.DefaultRefManagerService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.refs.RefManagerService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.refs.DefaultRefManagerService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.refs.DefaultRefManagerService
+ObjectIndex for org.scijava.service.Service add io.scif.refs.DefaultRefManagerService
+
+ServiceHelper loadService io.scif.services.DefaultDatasetIOService
+ClassUtils scanning io.scif.services.DatasetIOService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.services.DefaultDatasetIOService for org.scijava.plugin.Parameter
+
+ServiceHelper loadService io.scif.services.FormatService
+ClassUtils scanning io.scif.services.FormatService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.services.DefaultFormatService for org.scijava.plugin.Parameter
+
+ServiceHelper loadService org.scijava.app.AppService
+ClassUtils scanning org.scijava.app.AppService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.app.DefaultAppService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.app.AppService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.app.DefaultAppService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.app.DefaultAppService
+ObjectIndex for org.scijava.service.Service add org.scijava.app.DefaultAppService
+ClassUtils scanning io.scif.services.FormatService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.services.DefaultFormatService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.services.DefaultFormatService
+ObjectIndex for org.scijava.service.Service add io.scif.services.DefaultFormatService
+ClassUtils scanning io.scif.SCIFIOPlugin for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.SCIFIOPlugin for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractSCIFIOPlugin for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractSCIFIOPlugin for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.Format for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.Format for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractFormat for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.APNGFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.APNGFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.APNGFormat
+Context injecting log into io.scif.formats.APNGFormat
+Context injecting formatService into io.scif.formats.APNGFormat
+ClassUtils scanning io.scif.formats.AVIFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.AVIFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.AVIFormat
+Context injecting log into io.scif.formats.AVIFormat
+Context injecting formatService into io.scif.formats.AVIFormat
+ClassUtils scanning io.scif.formats.DICOMFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.DICOMFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.DICOMFormat
+Context injecting log into io.scif.formats.DICOMFormat
+Context injecting formatService into io.scif.formats.DICOMFormat
+ClassUtils scanning io.scif.formats.EPSFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.EPSFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.EPSFormat
+Context injecting log into io.scif.formats.EPSFormat
+Context injecting formatService into io.scif.formats.EPSFormat
+ClassUtils scanning io.scif.formats.FITSFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.FITSFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.FITSFormat
+Context injecting log into io.scif.formats.FITSFormat
+Context injecting formatService into io.scif.formats.FITSFormat
+ClassUtils scanning io.scif.formats.GIFFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.GIFFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.GIFFormat
+Context injecting log into io.scif.formats.GIFFormat
+Context injecting formatService into io.scif.formats.GIFFormat
+ClassUtils scanning io.scif.formats.ICSFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.ICSFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.ICSFormat
+Context injecting log into io.scif.formats.ICSFormat
+Context injecting formatService into io.scif.formats.ICSFormat
+ClassUtils scanning io.scif.formats.ImageIOFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.ImageIOFormat for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.JPEGFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.JPEGFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.JPEGFormat
+Context injecting log into io.scif.formats.JPEGFormat
+Context injecting formatService into io.scif.formats.JPEGFormat
+ClassUtils scanning io.scif.formats.JPEG2000Format for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.JPEG2000Format for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.JPEG2000Format
+Context injecting log into io.scif.formats.JPEG2000Format
+Context injecting formatService into io.scif.formats.JPEG2000Format
+ClassUtils scanning io.scif.formats.KontronFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.KontronFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.KontronFormat
+Context injecting log into io.scif.formats.KontronFormat
+Context injecting formatService into io.scif.formats.KontronFormat
+ClassUtils scanning io.scif.formats.MicromanagerFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.MicromanagerFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.MicromanagerFormat
+Context injecting log into io.scif.formats.MicromanagerFormat
+Context injecting formatService into io.scif.formats.MicromanagerFormat
+ClassUtils scanning io.scif.formats.MNGFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.MNGFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.MNGFormat
+Context injecting log into io.scif.formats.MNGFormat
+Context injecting formatService into io.scif.formats.MNGFormat
+ClassUtils scanning io.scif.formats.NRRDFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.NRRDFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.NRRDFormat
+Context injecting log into io.scif.formats.NRRDFormat
+Context injecting formatService into io.scif.formats.NRRDFormat
+ClassUtils scanning io.scif.formats.OBFFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.OBFFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.OBFFormat
+Context injecting log into io.scif.formats.OBFFormat
+Context injecting formatService into io.scif.formats.OBFFormat
+ClassUtils scanning io.scif.formats.PCXFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.PCXFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.PCXFormat
+Context injecting log into io.scif.formats.PCXFormat
+Context injecting formatService into io.scif.formats.PCXFormat
+ClassUtils scanning io.scif.formats.qt.PICTFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.qt.PICTFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.qt.PICTFormat
+Context injecting log into io.scif.formats.qt.PICTFormat
+Context injecting formatService into io.scif.formats.qt.PICTFormat
+ClassUtils scanning io.scif.formats.PGMFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.PGMFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.PGMFormat
+Context injecting log into io.scif.formats.PGMFormat
+Context injecting formatService into io.scif.formats.PGMFormat
+ClassUtils scanning io.scif.formats.qt.NativeQTFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.qt.NativeQTFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.qt.NativeQTFormat
+Context injecting log into io.scif.formats.qt.NativeQTFormat
+Context injecting formatService into io.scif.formats.qt.NativeQTFormat
+ClassUtils scanning io.scif.formats.ScancoISQFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.ScancoISQFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.ScancoISQFormat
+Context injecting log into io.scif.formats.ScancoISQFormat
+Context injecting formatService into io.scif.formats.ScancoISQFormat
+ClassUtils scanning io.scif.formats.TestImgFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.TestImgFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.TestImgFormat
+Context injecting log into io.scif.formats.TestImgFormat
+Context injecting formatService into io.scif.formats.TestImgFormat
+ClassUtils scanning io.scif.formats.StratecPQCTFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.StratecPQCTFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.StratecPQCTFormat
+Context injecting log into io.scif.formats.StratecPQCTFormat
+Context injecting formatService into io.scif.formats.StratecPQCTFormat
+ClassUtils scanning io.scif.formats.BMPFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.BMPFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.BMPFormat
+Context injecting log into io.scif.formats.BMPFormat
+Context injecting formatService into io.scif.formats.BMPFormat
+ClassUtils scanning io.scif.formats.qt.LegacyQTFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.qt.LegacyQTFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.qt.LegacyQTFormat
+Context injecting log into io.scif.formats.qt.LegacyQTFormat
+Context injecting formatService into io.scif.formats.qt.LegacyQTFormat
+ClassUtils scanning io.scif.formats.JPEGTileFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.JPEGTileFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.JPEGTileFormat
+Context injecting log into io.scif.formats.JPEGTileFormat
+Context injecting formatService into io.scif.formats.JPEGTileFormat
+ClassUtils scanning io.scif.formats.TIFFFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.TIFFFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.TIFFFormat
+Context injecting log into io.scif.formats.TIFFFormat
+Context injecting formatService into io.scif.formats.TIFFFormat
+ClassUtils scanning io.scif.formats.MinimalTIFFFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.MinimalTIFFFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.MinimalTIFFFormat
+Context injecting log into io.scif.formats.MinimalTIFFFormat
+Context injecting formatService into io.scif.formats.MinimalTIFFFormat
+ClassUtils scanning io.scif.formats.TIFFJAIFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.TIFFJAIFormat for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.TIFFJAIFormat
+Context injecting log into io.scif.formats.TIFFJAIFormat
+Context injecting formatService into io.scif.formats.TIFFJAIFormat
+Context injecting formatService into io.scif.formats.TIFFJAIFormat
+
+ServiceHelper loadService net.imagej.DatasetService
+[ERROR] No compatible service: net.imagej.DatasetService
+
+ServiceHelper loadService org.scijava.io.location.LocationService
+ClassUtils scanning org.scijava.Typed for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.TypedService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.HandlerService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.AbstractHandlerService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.location.LocationService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.location.DefaultLocationService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.Typed for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.TypedService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.HandlerService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.AbstractHandlerService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.location.LocationService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.location.DefaultLocationService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.io.location.DefaultLocationService
+ObjectIndex for org.scijava.service.Service add org.scijava.io.location.DefaultLocationService
+ClassUtils scanning io.scif.services.DatasetIOService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.services.DefaultDatasetIOService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.services.DefaultDatasetIOService
+ObjectIndex for org.scijava.service.Service add io.scif.services.DefaultDatasetIOService
+
+ServiceHelper loadService io.scif.services.DefaultFilePatternService
+ClassUtils scanning io.scif.services.FilePatternService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.services.DefaultFilePatternService for org.scijava.plugin.Parameter
+
+ServiceHelper loadService org.scijava.io.handle.DataHandleService
+ClassUtils scanning org.scijava.plugin.AbstractTypedService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.WrapperService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.AbstractWrapperService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.handle.DataHandleService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.handle.DefaultDataHandleService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.AbstractTypedService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.WrapperService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.AbstractWrapperService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.handle.DataHandleService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.handle.DefaultDataHandleService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.io.handle.DefaultDataHandleService
+ObjectIndex for org.scijava.service.Service add org.scijava.io.handle.DefaultDataHandleService
+ClassUtils scanning io.scif.services.FilePatternService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.services.DefaultFilePatternService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.services.DefaultFilePatternService
+ObjectIndex for org.scijava.service.Service add io.scif.services.DefaultFilePatternService
+
+ServiceHelper loadService io.scif.services.DefaultTranslatorService
+ClassUtils scanning io.scif.services.TranslatorService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.services.DefaultTranslatorService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.services.TranslatorService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.services.DefaultTranslatorService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.services.DefaultTranslatorService
+ObjectIndex for org.scijava.service.Service add io.scif.services.DefaultTranslatorService
+
+ServiceHelper loadService io.scif.services.JAIIIOServiceImpl
+ClassUtils scanning io.scif.services.JAIIIOService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.services.JAIIIOServiceImpl for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.services.JAIIIOService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.services.JAIIIOServiceImpl for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.services.JAIIIOServiceImpl
+ObjectIndex for org.scijava.service.Service add io.scif.services.JAIIIOServiceImpl
+
+ServiceHelper loadService io.scif.xml.DefaultXMLService
+ClassUtils scanning io.scif.xml.XMLService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.xml.DefaultXMLService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.xml.XMLService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.xml.DefaultXMLService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.xml.DefaultXMLService
+ObjectIndex for org.scijava.service.Service add io.scif.xml.DefaultXMLService
+
+ServiceHelper loadService org.scijava.app.DefaultStatusService
+ClassUtils scanning org.scijava.app.StatusService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.app.DefaultStatusService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.app.StatusService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.app.DefaultStatusService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.app.DefaultStatusService
+ObjectIndex for org.scijava.service.Service add org.scijava.app.DefaultStatusService
+
+ServiceHelper loadService org.scijava.command.DefaultCommandService
+ClassUtils scanning org.scijava.command.CommandService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.command.DefaultCommandService for org.scijava.plugin.Parameter
+
+ServiceHelper loadService org.scijava.module.ModuleService
+ClassUtils scanning org.scijava.module.ModuleService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.module.DefaultModuleService for org.scijava.plugin.Parameter
+
+ServiceHelper loadService org.scijava.prefs.PrefService
+ClassUtils scanning org.scijava.prefs.PrefService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.prefs.AbstractPrefService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.prefs.DefaultPrefService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.prefs.PrefService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.prefs.AbstractPrefService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.prefs.DefaultPrefService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.prefs.DefaultPrefService
+ObjectIndex for org.scijava.service.Service add org.scijava.prefs.DefaultPrefService
+
+ServiceHelper loadService org.scijava.convert.ConvertService
+ClassUtils scanning org.scijava.convert.ConvertService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.convert.AbstractConvertService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.convert.DefaultConvertService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.convert.ConvertService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.convert.AbstractConvertService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.convert.DefaultConvertService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.convert.DefaultConvertService
+ObjectIndex for org.scijava.service.Service add org.scijava.convert.DefaultConvertService
+ClassUtils scanning org.scijava.module.ModuleService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.module.DefaultModuleService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.module.DefaultModuleService
+ObjectIndex for org.scijava.service.Service add org.scijava.module.DefaultModuleService
+ClassUtils scanning org.scijava.command.CommandService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.command.DefaultCommandService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.command.DefaultCommandService
+ObjectIndex for org.scijava.service.Service add org.scijava.command.DefaultCommandService
+DefaultCommandService wrapping class='io.scif.commands.OpenDataset', menu='File > Import > Image... ', priority=0.0, enabled=true, pluginType=Command
+DefaultCommandService wrapping class='io.scif.commands.SaveImage', menu='File > Save', priority=0.0, enabled=true, pluginType=Command
+DefaultCommandService wrapping class='io.scif.commands.SaveAsImage', menu='File > Save As...', priority=0.0, enabled=true, pluginType=Command
+ClassUtils scanning org.scijava.event.SciJavaEvent for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.event.SciJavaEvent for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.object.event.ListEvent for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.object.event.ListEvent for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.module.event.ModulesListEvent for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.module.event.ModulesListEvent for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.module.event.ModulesAddedEvent for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.module.event.ModulesAddedEvent for org.scijava.plugin.Parameter
+Context injecting context into org.scijava.module.event.ModulesAddedEvent
+
+ServiceHelper loadService org.scijava.console.DefaultConsoleService
+ClassUtils scanning org.scijava.console.ConsoleService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.console.DefaultConsoleService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.console.ConsoleService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.console.DefaultConsoleService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.console.DefaultConsoleService
+ObjectIndex for org.scijava.service.Service add org.scijava.console.DefaultConsoleService
+
+ServiceHelper loadService org.scijava.display.DefaultDisplayService
+ClassUtils scanning org.scijava.display.DisplayService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.display.DefaultDisplayService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.display.DisplayService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.display.DefaultDisplayService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.display.DefaultDisplayService
+ObjectIndex for org.scijava.service.Service add org.scijava.display.DefaultDisplayService
+
+ServiceHelper loadService org.scijava.download.DefaultDownloadService
+ClassUtils scanning org.scijava.download.DownloadService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.download.DefaultDownloadService for org.scijava.plugin.Parameter
+
+ServiceHelper loadService org.scijava.task.TaskService
+ClassUtils scanning org.scijava.task.TaskService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.task.DefaultTaskService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.task.TaskService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.task.DefaultTaskService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.task.DefaultTaskService
+ObjectIndex for org.scijava.service.Service add org.scijava.task.DefaultTaskService
+ClassUtils scanning org.scijava.download.DownloadService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.download.DefaultDownloadService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.download.DefaultDownloadService
+ObjectIndex for org.scijava.service.Service add org.scijava.download.DefaultDownloadService
+
+ServiceHelper loadService org.scijava.event.DefaultEventHistory
+ClassUtils scanning org.scijava.event.EventHistory for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.event.DefaultEventHistory for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.event.EventHistory for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.event.DefaultEventHistory for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.event.DefaultEventHistory
+ObjectIndex for org.scijava.service.Service add org.scijava.event.DefaultEventHistory
+
+ServiceHelper loadService org.scijava.input.DefaultInputService
+ClassUtils scanning org.scijava.input.InputService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.input.DefaultInputService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.input.InputService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.input.DefaultInputService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.input.DefaultInputService
+ObjectIndex for org.scijava.service.Service add org.scijava.input.DefaultInputService
+
+ServiceHelper loadService org.scijava.io.DefaultIOService
+ClassUtils scanning org.scijava.io.IOService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.DefaultIOService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.IOService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.DefaultIOService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.io.DefaultIOService
+ObjectIndex for org.scijava.service.Service add org.scijava.io.DefaultIOService
+
+ServiceHelper loadService org.scijava.io.DefaultRecentFileService
+ClassUtils scanning org.scijava.io.RecentFileService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.DefaultRecentFileService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.RecentFileService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.DefaultRecentFileService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.io.DefaultRecentFileService
+ObjectIndex for org.scijava.service.Service add org.scijava.io.DefaultRecentFileService
+Dec 22, 2019 8:43:39 PM java.util.prefs.WindowsPreferences <init>
+WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+
+ServiceHelper loadService org.scijava.io.nio.DefaultNIOService
+ClassUtils scanning org.scijava.io.nio.NIOService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.nio.DefaultNIOService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.nio.NIOService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.nio.DefaultNIOService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.io.nio.DefaultNIOService
+ObjectIndex for org.scijava.service.Service add org.scijava.io.nio.DefaultNIOService
+
+ServiceHelper loadService org.scijava.main.DefaultMainService
+ClassUtils scanning org.scijava.main.MainService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.main.DefaultMainService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.main.MainService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.main.DefaultMainService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.main.DefaultMainService
+ObjectIndex for org.scijava.service.Service add org.scijava.main.DefaultMainService
+
+ServiceHelper loadService org.scijava.menu.DefaultMenuService
+ClassUtils scanning org.scijava.menu.MenuService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.menu.DefaultMenuService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.menu.MenuService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.menu.DefaultMenuService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.menu.DefaultMenuService
+ObjectIndex for org.scijava.service.Service add org.scijava.menu.DefaultMenuService
+
+ServiceHelper loadService org.scijava.options.DefaultOptionsService
+ClassUtils scanning org.scijava.options.OptionsService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.options.DefaultOptionsService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.options.OptionsService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.options.DefaultOptionsService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.options.DefaultOptionsService
+ObjectIndex for org.scijava.service.Service add org.scijava.options.DefaultOptionsService
+
+ServiceHelper loadService org.scijava.parse.DefaultParseService
+ClassUtils scanning org.scijava.parse.ParseService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.parse.DefaultParseService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.parse.ParseService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.parse.DefaultParseService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.parse.DefaultParseService
+ObjectIndex for org.scijava.service.Service add org.scijava.parse.DefaultParseService
+
+ServiceHelper loadService org.scijava.platform.DefaultPlatformService
+ClassUtils scanning org.scijava.platform.PlatformService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.platform.DefaultPlatformService for org.scijava.plugin.Parameter
+
+ServiceHelper loadService org.scijava.platform.AppEventService
+ClassUtils scanning org.scijava.platform.AppEventService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.platform.DefaultAppEventService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.platform.AppEventService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.platform.DefaultAppEventService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.platform.DefaultAppEventService
+ObjectIndex for org.scijava.service.Service add org.scijava.platform.DefaultAppEventService
+ClassUtils scanning org.scijava.platform.PlatformService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.platform.DefaultPlatformService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.platform.DefaultPlatformService
+ObjectIndex for org.scijava.service.Service add org.scijava.platform.DefaultPlatformService
+ClassUtils scanning org.scijava.plugin.SingletonPlugin for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.SingletonPlugin for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.platform.Platform for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.platform.Platform for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.platform.AbstractPlatform for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.platform.AbstractPlatform for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.platform.DefaultPlatform for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.platform.DefaultPlatform for org.scijava.plugin.Parameter
+
+ServiceHelper loadService org.scijava.run.DefaultRunService
+ClassUtils scanning org.scijava.run.RunService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.run.DefaultRunService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.run.RunService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.run.DefaultRunService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.run.DefaultRunService
+ObjectIndex for org.scijava.service.Service add org.scijava.run.DefaultRunService
+
+ServiceHelper loadService org.scijava.script.DefaultScriptHeaderService
+ClassUtils scanning org.scijava.script.ScriptHeaderService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.script.DefaultScriptHeaderService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.script.ScriptHeaderService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.script.DefaultScriptHeaderService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.script.DefaultScriptHeaderService
+ObjectIndex for org.scijava.service.Service add org.scijava.script.DefaultScriptHeaderService
+
+ServiceHelper loadService org.scijava.script.DefaultScriptService
+ClassUtils scanning org.scijava.script.ScriptService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.script.DefaultScriptService for org.scijava.plugin.Parameter
+
+ServiceHelper loadService org.scijava.script.process.ScriptProcessorService
+ClassUtils scanning org.scijava.script.process.ScriptProcessorService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.script.process.DefaultScriptProcessorService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.script.process.ScriptProcessorService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.script.process.DefaultScriptProcessorService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.script.process.DefaultScriptProcessorService
+ObjectIndex for org.scijava.service.Service add org.scijava.script.process.DefaultScriptProcessorService
+ClassUtils scanning org.scijava.script.ScriptService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.script.DefaultScriptService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.script.DefaultScriptService
+ObjectIndex for org.scijava.service.Service add org.scijava.script.DefaultScriptService
+
+ServiceHelper loadService org.scijava.startup.DefaultStartupService
+ClassUtils scanning org.scijava.startup.StartupService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.startup.DefaultStartupService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.startup.StartupService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.startup.DefaultStartupService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.startup.DefaultStartupService
+ObjectIndex for org.scijava.service.Service add org.scijava.startup.DefaultStartupService
+
+ServiceHelper loadService org.scijava.text.DefaultTextService
+ClassUtils scanning org.scijava.text.TextService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.text.DefaultTextService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.text.TextService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.text.DefaultTextService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.text.DefaultTextService
+ObjectIndex for org.scijava.service.Service add org.scijava.text.DefaultTextService
+
+ServiceHelper loadService org.scijava.tool.DefaultToolService
+ClassUtils scanning org.scijava.tool.ToolService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.tool.DefaultToolService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.tool.ToolService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.tool.DefaultToolService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.tool.DefaultToolService
+ObjectIndex for org.scijava.service.Service add org.scijava.tool.DefaultToolService
+
+ServiceHelper loadService org.scijava.ui.DefaultUIService
+ClassUtils scanning org.scijava.ui.UIService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.ui.DefaultUIService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.ui.UIService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.ui.DefaultUIService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.ui.DefaultUIService
+ObjectIndex for org.scijava.service.Service add org.scijava.ui.DefaultUIService
+
+ServiceHelper loadService org.scijava.ui.dnd.DefaultDragAndDropService
+ClassUtils scanning org.scijava.ui.dnd.DragAndDropService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.ui.dnd.DefaultDragAndDropService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.ui.dnd.DragAndDropService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.ui.dnd.DefaultDragAndDropService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.ui.dnd.DefaultDragAndDropService
+ObjectIndex for org.scijava.service.Service add org.scijava.ui.dnd.DefaultDragAndDropService
+
+ServiceHelper loadService org.scijava.welcome.DefaultWelcomeService
+ClassUtils scanning org.scijava.welcome.WelcomeService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.welcome.DefaultWelcomeService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.welcome.WelcomeService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.welcome.DefaultWelcomeService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.welcome.DefaultWelcomeService
+ObjectIndex for org.scijava.service.Service add org.scijava.welcome.DefaultWelcomeService
+
+ServiceHelper loadService org.scijava.widget.DefaultWidgetService
+ClassUtils scanning org.scijava.widget.WidgetService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.widget.DefaultWidgetService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.widget.WidgetService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.widget.DefaultWidgetService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.widget.DefaultWidgetService
+ObjectIndex for org.scijava.service.Service add org.scijava.widget.DefaultWidgetService
+
+ServiceHelper loadService io.scif.services.DefaultInitializeService
+ClassUtils scanning io.scif.services.InitializeService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.services.DefaultInitializeService for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.services.InitializeService for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.services.DefaultInitializeService for org.scijava.event.EventHandler
+ServiceIndex adding io.scif.services.DefaultInitializeService
+ObjectIndex for org.scijava.service.Service add io.scif.services.DefaultInitializeService
+
+ServiceHelper loadService org.scijava.cache.DefaultCacheService
+ClassUtils scanning org.scijava.cache.CacheService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.cache.DefaultCacheService for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.cache.CacheService for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.cache.DefaultCacheService for org.scijava.event.EventHandler
+ServiceIndex adding org.scijava.cache.DefaultCacheService
+ObjectIndex for org.scijava.service.Service add org.scijava.cache.DefaultCacheService
+ClassUtils scanning org.scijava.service.event.ServicesLoadedEvent for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.service.event.ServicesLoadedEvent for org.scijava.plugin.Parameter
+Context injecting context into org.scijava.service.event.ServicesLoadedEvent
+
+//// end new Context() /////
+
+//// start imgOpener.openImgs ////
+
+reading data\benchmark_v1_2018_x64y64z5c2s1t1.ics
+ClassUtils scanning io.scif.img.AbstractImgIOComponent for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.AbstractImgIOComponent for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.img.ImgOpener for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.ImgOpener for org.scijava.plugin.Parameter
+Context injecting context into io.scif.img.ImgOpener
+Context injecting log into io.scif.img.ImgOpener
+Context injecting formatService into io.scif.img.ImgOpener
+Context injecting imgUtils into io.scif.img.ImgOpener
+Context injecting statusService into io.scif.img.ImgOpener
+Context injecting pcService into io.scif.img.ImgOpener
+Context injecting initializeService into io.scif.img.ImgOpener
+ClassUtils scanning org.scijava.app.event.StatusEvent for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.app.event.StatusEvent for org.scijava.plugin.Parameter
+Context injecting context into org.scijava.app.event.StatusEvent
+ClassUtils scanning io.scif.HasFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.HasFormat for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractHasFormat for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractHasFormat for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.Checker for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.Checker for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractChecker for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractChecker for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.app.App for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.app.App for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.app.AbstractApp for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.app.AbstractApp for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.app.SCIFIOApp for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.app.SCIFIOApp for org.scijava.plugin.Parameter
+Context injecting context into io.scif.app.SCIFIOApp
+ClassUtils scanning io.scif.formats.APNGFormat$Checker for org.scijava.event.EventHandler
+Context injecting log into io.scif.app.SCIFIOApp
+ClassUtils scanning io.scif.formats.APNGFormat$Checker for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.APNGFormat$Checker
+ClassUtils scanning org.scijava.app.SciJavaApp for org.scijava.event.EventHandler
+Context injecting log into io.scif.formats.APNGFormat$Checker
+ClassUtils scanning org.scijava.app.SciJavaApp for org.scijava.plugin.Parameter
+Context injecting context into org.scijava.app.SciJavaApp
+Context injecting log into org.scijava.app.SciJavaApp
+Context injecting formatService into io.scif.formats.APNGFormat$Checker
+Context injecting formatService into io.scif.formats.APNGFormat$Checker
+Context injecting handles into io.scif.formats.APNGFormat$Checker
+ClassUtils scanning org.scijava.ui.UserInterface for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.ui.UserInterface for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.ui.headless.HeadlessUI for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.ui.headless.HeadlessUI for org.scijava.plugin.Parameter
+Context injecting context into org.scijava.ui.headless.HeadlessUI
+ClassUtils scanning org.scijava.plugin.TypedPlugin for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.TypedPlugin for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.AbstractTypedPlugin for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.AbstractTypedPlugin for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.WrapperPlugin for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.WrapperPlugin for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.plugin.AbstractWrapperPlugin for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.plugin.AbstractWrapperPlugin for org.scijava.plugin.Parameter
+ClassUtils scanning java.io.DataInput for org.scijava.event.EventHandler
+ClassUtils scanning java.io.DataInput for org.scijava.plugin.Parameter
+ClassUtils scanning java.io.DataOutput for org.scijava.event.EventHandler
+ClassUtils scanning java.io.DataOutput for org.scijava.plugin.Parameter
+ClassUtils scanning java.lang.AutoCloseable for org.scijava.event.EventHandler
+ClassUtils scanning java.lang.AutoCloseable for org.scijava.plugin.Parameter
+ClassUtils scanning java.io.Closeable for org.scijava.event.EventHandler
+ClassUtils scanning java.io.Closeable for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.handle.DataHandle for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.handle.DataHandle for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.handle.AbstractDataHandle for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.handle.AbstractDataHandle for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.io.handle.BytesHandle for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.handle.BytesHandle for org.scijava.plugin.Parameter
+Context injecting context into org.scijava.io.handle.BytesHandle
+ClassUtils scanning org.scijava.io.handle.DummyHandle for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.handle.DummyHandle for org.scijava.plugin.Parameter
+Context injecting context into org.scijava.io.handle.DummyHandle
+ClassUtils scanning org.scijava.io.handle.FileHandle for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.io.handle.FileHandle for org.scijava.plugin.Parameter
+Context injecting context into org.scijava.io.handle.FileHandle
+ClassUtils scanning io.scif.formats.AVIFormat$Checker for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.AVIFormat$Checker for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.AVIFormat$Checker
+Context injecting log into io.scif.formats.AVIFormat$Checker
+Context injecting formatService into io.scif.formats.AVIFormat$Checker
+Context injecting formatService into io.scif.formats.AVIFormat$Checker
+Context injecting handles into io.scif.formats.AVIFormat$Checker
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+ClassUtils scanning io.scif.formats.BMPFormat$Checker for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.BMPFormat$Checker for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.BMPFormat$Checker
+Context injecting log into io.scif.formats.BMPFormat$Checker
+Context injecting formatService into io.scif.formats.BMPFormat$Checker
+Context injecting formatService into io.scif.formats.BMPFormat$Checker
+Context injecting handles into io.scif.formats.BMPFormat$Checker
+ClassUtils scanning io.scif.formats.DICOMFormat$Checker for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.DICOMFormat$Checker for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.DICOMFormat$Checker
+Context injecting log into io.scif.formats.DICOMFormat$Checker
+Context injecting formatService into io.scif.formats.DICOMFormat$Checker
+Context injecting formatService into io.scif.formats.DICOMFormat$Checker
+Context injecting handles into io.scif.formats.DICOMFormat$Checker
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+ClassUtils scanning io.scif.DefaultComponent for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.DefaultComponent for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.DefaultChecker for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.DefaultChecker for org.scijava.plugin.Parameter
+Context injecting context into io.scif.DefaultChecker
+Context injecting log into io.scif.DefaultChecker
+Context injecting formatService into io.scif.DefaultChecker
+Context injecting formatService into io.scif.DefaultChecker
+Context injecting handles into io.scif.DefaultChecker
+Context injecting context into io.scif.DefaultChecker
+Context injecting log into io.scif.DefaultChecker
+Context injecting formatService into io.scif.DefaultChecker
+Context injecting formatService into io.scif.DefaultChecker
+Context injecting handles into io.scif.DefaultChecker
+ClassUtils scanning io.scif.formats.GIFFormat$Checker for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.GIFFormat$Checker for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.GIFFormat$Checker
+Context injecting log into io.scif.formats.GIFFormat$Checker
+Context injecting formatService into io.scif.formats.GIFFormat$Checker
+Context injecting formatService into io.scif.formats.GIFFormat$Checker
+Context injecting handles into io.scif.formats.GIFFormat$Checker
+Context injecting context into io.scif.DefaultChecker
+Context injecting log into io.scif.DefaultChecker
+Context injecting formatService into io.scif.DefaultChecker
+Context injecting formatService into io.scif.DefaultChecker
+Context injecting handles into io.scif.DefaultChecker
+ClassUtils scanning io.scif.HasSource for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.HasSource for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractHasSource for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractHasSource for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.Groupable for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.Groupable for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractGroupable for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractGroupable for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.Reader for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.Reader for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.TypedReader for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.TypedReader for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractReader for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractReader for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.ByteArrayReader for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.ByteArrayReader for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.ICSFormat$Reader for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.ICSFormat$Reader for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.ICSFormat$Reader
+Context injecting log into io.scif.formats.ICSFormat$Reader
+Context injecting formatService into io.scif.formats.ICSFormat$Reader
+Context injecting formatService into io.scif.formats.ICSFormat$Reader
+Context injecting handles into io.scif.formats.ICSFormat$Reader
+Context injecting dataHandleService into io.scif.formats.ICSFormat$Reader
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+ClassUtils scanning io.scif.Parser for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.Parser for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.TypedParser for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.TypedParser for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractParser for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractParser for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.ICSFormat$Parser for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.ICSFormat$Parser for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.ICSFormat$Parser
+Context injecting log into io.scif.formats.ICSFormat$Parser
+Context injecting formatService into io.scif.formats.ICSFormat$Parser
+Context injecting formatService into io.scif.formats.ICSFormat$Parser
+Context injecting handles into io.scif.formats.ICSFormat$Parser
+Context injecting handles into io.scif.formats.ICSFormat$Parser
+ClassUtils scanning java.io.Serializable for org.scijava.event.EventHandler
+ClassUtils scanning java.io.Serializable for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.HasMetaTable for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.HasMetaTable for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.Metadata for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.Metadata for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.TypedMetadata for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.TypedMetadata for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractMetadata for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractMetadata for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.ICSFormat$Metadata for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.ICSFormat$Metadata for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.ICSFormat$Metadata
+Context injecting log into io.scif.formats.ICSFormat$Metadata
+Context injecting formatService into io.scif.formats.ICSFormat$Metadata
+Context injecting formatService into io.scif.formats.ICSFormat$Metadata
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+ClassUtils scanning io.scif.filters.Filter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.Filter for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.filters.AbstractFilter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.AbstractFilter for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.filters.MasterFilter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.MasterFilter for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.filters.MasterFilterHelper for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.MasterFilterHelper for org.scijava.plugin.Parameter
+Context injecting context into io.scif.filters.MasterFilterHelper
+Context injecting log into io.scif.filters.MasterFilterHelper
+Context injecting formatService into io.scif.filters.MasterFilterHelper
+Context injecting pluginService into io.scif.filters.MasterFilterHelper
+ClassUtils scanning io.scif.filters.AbstractReaderFilter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.AbstractReaderFilter for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.filters.ChannelFiller for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.ChannelFiller for org.scijava.plugin.Parameter
+Context injecting context into io.scif.filters.ChannelFiller
+Context injecting log into io.scif.filters.ChannelFiller
+Context injecting formatService into io.scif.filters.ChannelFiller
+Context injecting pluginService into io.scif.filters.ChannelFiller
+ClassUtils scanning io.scif.filters.DimensionSwapper for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.DimensionSwapper for org.scijava.plugin.Parameter
+Context injecting context into io.scif.filters.DimensionSwapper
+Context injecting log into io.scif.filters.DimensionSwapper
+Context injecting formatService into io.scif.filters.DimensionSwapper
+Context injecting pluginService into io.scif.filters.DimensionSwapper
+ClassUtils scanning io.scif.filters.FileStitcher for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.FileStitcher for org.scijava.plugin.Parameter
+Context injecting context into io.scif.filters.FileStitcher
+Context injecting log into io.scif.filters.FileStitcher
+Context injecting formatService into io.scif.filters.FileStitcher
+Context injecting pluginService into io.scif.filters.FileStitcher
+Context injecting initializeService into io.scif.filters.FileStitcher
+Context injecting filePatternService into io.scif.filters.FileStitcher
+Context injecting dataHandleService into io.scif.filters.FileStitcher
+ClassUtils scanning io.scif.filters.MinMaxFilter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.MinMaxFilter for org.scijava.plugin.Parameter
+Context injecting context into io.scif.filters.MinMaxFilter
+Context injecting log into io.scif.filters.MinMaxFilter
+Context injecting formatService into io.scif.filters.MinMaxFilter
+Context injecting pluginService into io.scif.filters.MinMaxFilter
+ClassUtils scanning io.scif.filters.PlaneSeparator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.PlaneSeparator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.filters.PlaneSeparator
+Context injecting log into io.scif.filters.PlaneSeparator
+Context injecting formatService into io.scif.filters.PlaneSeparator
+Context injecting pluginService into io.scif.filters.PlaneSeparator
+ClassUtils scanning io.scif.filters.MetadataWrapper for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.MetadataWrapper for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.filters.AbstractMetadataWrapper for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.AbstractMetadataWrapper for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.filters.ChannelFillerMetadata for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.ChannelFillerMetadata for org.scijava.plugin.Parameter
+Context injecting context into io.scif.filters.ChannelFillerMetadata
+Context injecting log into io.scif.filters.ChannelFillerMetadata
+Context injecting formatService into io.scif.filters.ChannelFillerMetadata
+Context injecting formatService into io.scif.filters.ChannelFillerMetadata
+Context injecting initializeService into io.scif.filters.ChannelFillerMetadata
+Context injecting context into io.scif.filters.ChannelFillerMetadata
+Context injecting log into io.scif.filters.ChannelFillerMetadata
+Context injecting formatService into io.scif.filters.ChannelFillerMetadata
+Context injecting formatService into io.scif.filters.ChannelFillerMetadata
+Context injecting initializeService into io.scif.filters.ChannelFillerMetadata
+ClassUtils scanning io.scif.filters.PlaneSeparatorMetadata for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.filters.PlaneSeparatorMetadata for org.scijava.plugin.Parameter
+Context injecting context into io.scif.filters.PlaneSeparatorMetadata
+Context injecting log into io.scif.filters.PlaneSeparatorMetadata
+Context injecting formatService into io.scif.filters.PlaneSeparatorMetadata
+Context injecting formatService into io.scif.filters.PlaneSeparatorMetadata
+ClassUtils scanning io.scif.img.converters.PlaneConverter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.converters.PlaneConverter for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.img.converters.AbstractPlaneConverter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.converters.AbstractPlaneConverter for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.img.converters.ArrayDataAccessConverter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.converters.ArrayDataAccessConverter for org.scijava.plugin.Parameter
+Context injecting context into io.scif.img.converters.ArrayDataAccessConverter
+Context injecting log into io.scif.img.converters.ArrayDataAccessConverter
+Context injecting formatService into io.scif.img.converters.ArrayDataAccessConverter
+ClassUtils scanning io.scif.img.converters.RandomAccessConverter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.converters.RandomAccessConverter for org.scijava.plugin.Parameter
+Context injecting context into io.scif.img.converters.RandomAccessConverter
+Context injecting log into io.scif.img.converters.RandomAccessConverter
+Context injecting formatService into io.scif.img.converters.RandomAccessConverter
+Context injecting imgUtilService into io.scif.img.converters.RandomAccessConverter
+ClassUtils scanning io.scif.img.converters.PlanarAccessConverter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.converters.PlanarAccessConverter for org.scijava.plugin.Parameter
+Context injecting context into io.scif.img.converters.PlanarAccessConverter
+Context injecting log into io.scif.img.converters.PlanarAccessConverter
+Context injecting formatService into io.scif.img.converters.PlanarAccessConverter
+Context injecting imgUtilService into io.scif.img.converters.PlanarAccessConverter
+ClassUtils scanning io.scif.img.cell.loaders.SCIFIOArrayLoader for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.cell.loaders.SCIFIOArrayLoader for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.img.cell.loaders.AbstractArrayLoader for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.cell.loaders.AbstractArrayLoader for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.img.cell.loaders.ShortArrayLoader for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.cell.loaders.ShortArrayLoader for org.scijava.plugin.Parameter
+Context injecting imgUtilityService into io.scif.img.cell.loaders.ShortArrayLoader
+Context injecting imgUtilityService into io.scif.img.cell.loaders.ShortArrayLoader
+Context injecting imgUtilityService into io.scif.img.cell.loaders.ShortArrayLoader
+Context injecting imgUtilityService into io.scif.img.cell.loaders.ShortArrayLoader
+Context injecting imgUtilityService into io.scif.img.cell.loaders.ShortArrayLoader
+Context injecting imgUtilityService into io.scif.img.cell.loaders.ShortArrayLoader
+Context injecting imgUtilityService into io.scif.img.cell.loaders.ShortArrayLoader
+Context injecting imgUtilityService into io.scif.img.cell.loaders.ShortArrayLoader
+Context injecting imgUtilityService into io.scif.img.cell.loaders.ShortArrayLoader
+Context injecting imgUtilityService into io.scif.img.cell.loaders.ShortArrayLoader
+Context injecting context into org.scijava.app.event.StatusEvent
+
+//// end imgOpener.openImgs ////
+
+//// start imgSaver.saveImg ////
+
+saving data\out_benchmark_v1_2018_x64y64z5c2s1t1.ids.tif
+ClassUtils scanning io.scif.img.ImgSaver for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.img.ImgSaver for org.scijava.plugin.Parameter
+Context injecting context into io.scif.img.ImgSaver
+Context injecting log into io.scif.img.ImgSaver
+Context injecting formatService into io.scif.img.ImgSaver
+Context injecting imgUtils into io.scif.img.ImgSaver
+Context injecting statusService into io.scif.img.ImgSaver
+Context injecting formatService into io.scif.img.ImgSaver
+Context injecting translatorService into io.scif.img.ImgSaver
+ClassUtils scanning io.scif.Writer for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.Writer for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.TypedWriter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.TypedWriter for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractWriter for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractWriter for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.TIFFFormat$Writer for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.TIFFFormat$Writer for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.TIFFFormat$Writer
+Context injecting log into io.scif.formats.TIFFFormat$Writer
+Context injecting formatService into io.scif.formats.TIFFFormat$Writer
+Context injecting formatService into io.scif.formats.TIFFFormat$Writer
+Context injecting handles into io.scif.formats.TIFFFormat$Writer
+Context injecting dataHandleService into io.scif.formats.TIFFFormat$Writer
+Context injecting context into org.scijava.app.event.StatusEvent
+ClassUtils scanning io.scif.HasColorTable for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.HasColorTable for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.MinimalTIFFFormat$Metadata for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.MinimalTIFFFormat$Metadata for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.TIFFFormat$Metadata for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.TIFFFormat$Metadata for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.TIFFFormat$Metadata
+Context injecting log into io.scif.formats.TIFFFormat$Metadata
+Context injecting formatService into io.scif.formats.TIFFFormat$Metadata
+Context injecting formatService into io.scif.formats.TIFFFormat$Metadata
+ClassUtils scanning io.scif.Translator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.Translator for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.AbstractTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.AbstractTranslator for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.APNGFormat$APNGTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.APNGFormat$APNGTranslator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.APNGFormat$APNGTranslator
+Context injecting log into io.scif.formats.APNGFormat$APNGTranslator
+Context injecting formatService into io.scif.formats.APNGFormat$APNGTranslator
+ClassUtils scanning io.scif.formats.AVIFormat$Translator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.AVIFormat$Translator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.AVIFormat$Translator
+Context injecting log into io.scif.formats.AVIFormat$Translator
+Context injecting formatService into io.scif.formats.AVIFormat$Translator
+ClassUtils scanning io.scif.DefaultTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.DefaultTranslator for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.formats.EPSFormat$EPSTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.EPSFormat$EPSTranslator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.EPSFormat$EPSTranslator
+Context injecting log into io.scif.formats.EPSFormat$EPSTranslator
+Context injecting formatService into io.scif.formats.EPSFormat$EPSTranslator
+ClassUtils scanning io.scif.formats.ICSFormat$ICSTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.ICSFormat$ICSTranslator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.ICSFormat$ICSTranslator
+Context injecting log into io.scif.formats.ICSFormat$ICSTranslator
+Context injecting formatService into io.scif.formats.ICSFormat$ICSTranslator
+ClassUtils scanning io.scif.formats.ImageIOFormat$ImageIOTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.ImageIOFormat$ImageIOTranslator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.ImageIOFormat$ImageIOTranslator
+Context injecting log into io.scif.formats.ImageIOFormat$ImageIOTranslator
+Context injecting formatService into io.scif.formats.ImageIOFormat$ImageIOTranslator
+ClassUtils scanning io.scif.formats.MicromanagerFormat$MicromanagerTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.MicromanagerFormat$MicromanagerTranslator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.MicromanagerFormat$MicromanagerTranslator
+Context injecting log into io.scif.formats.MicromanagerFormat$MicromanagerTranslator
+Context injecting formatService into io.scif.formats.MicromanagerFormat$MicromanagerTranslator
+ClassUtils scanning io.scif.formats.TestImgFormat$TestImgTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.TestImgFormat$TestImgTranslator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.TestImgFormat$TestImgTranslator
+Context injecting log into io.scif.formats.TestImgFormat$TestImgTranslator
+Context injecting formatService into io.scif.formats.TestImgFormat$TestImgTranslator
+Context injecting dataHandleService into io.scif.formats.TestImgFormat$TestImgTranslator
+ClassUtils scanning io.scif.formats.qt.LegacyQTFormat$LegacyQTTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.qt.LegacyQTFormat$LegacyQTTranslator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.qt.LegacyQTFormat$LegacyQTTranslator
+Context injecting log into io.scif.formats.qt.LegacyQTFormat$LegacyQTTranslator
+Context injecting formatService into io.scif.formats.qt.LegacyQTFormat$LegacyQTTranslator
+Context injecting qtJavaService into io.scif.formats.qt.LegacyQTFormat$LegacyQTTranslator
+Context injecting log into io.scif.formats.qt.LegacyQTFormat$LegacyQTTranslator
+ClassUtils scanning io.scif.formats.qt.NativeQTFormat$NativeQTTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.qt.NativeQTFormat$NativeQTTranslator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.qt.NativeQTFormat$NativeQTTranslator
+Context injecting log into io.scif.formats.qt.NativeQTFormat$NativeQTTranslator
+Context injecting formatService into io.scif.formats.qt.NativeQTFormat$NativeQTTranslator
+ClassUtils scanning io.scif.formats.TIFFFormat$TIFFTranslator for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.TIFFFormat$TIFFTranslator for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.TIFFFormat$TIFFTranslator
+Context injecting log into io.scif.formats.TIFFFormat$TIFFTranslator
+Context injecting formatService into io.scif.formats.TIFFFormat$TIFFTranslator
+Context injecting context into io.scif.DefaultTranslator
+Context injecting log into io.scif.DefaultTranslator
+Context injecting formatService into io.scif.DefaultTranslator
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+ClassUtils scanning io.scif.formats.tiff.TiffSaver for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.tiff.TiffSaver for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.tiff.TiffSaver
+Context injecting log into io.scif.formats.tiff.TiffSaver
+Context injecting dataHandleService into io.scif.formats.tiff.TiffSaver
+ClassUtils scanning org.scijava.Gateway for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.Gateway for org.scijava.plugin.Parameter
+ClassUtils scanning org.scijava.AbstractGateway for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.AbstractGateway for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.SCIFIO for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.SCIFIO for org.scijava.plugin.Parameter
+Context injecting context into io.scif.SCIFIO
+Context injecting context into org.scijava.app.event.StatusEvent
+Context injecting context into org.scijava.app.event.StatusEvent
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+ClassUtils scanning io.scif.formats.tiff.TiffParser for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.formats.tiff.TiffParser for org.scijava.plugin.Parameter
+Context injecting context into io.scif.formats.tiff.TiffParser
+Context injecting context into io.scif.SCIFIO
+ClassUtils scanning io.scif.codec.Codec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.Codec for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.codec.AbstractCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.AbstractCodec for org.scijava.plugin.Parameter
+ClassUtils scanning io.scif.codec.Base64Codec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.Base64Codec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.Base64Codec
+Context injecting log into io.scif.codec.Base64Codec
+Context injecting formatService into io.scif.codec.Base64Codec
+Context injecting handles into io.scif.codec.Base64Codec
+ClassUtils scanning io.scif.codec.HuffmanCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.HuffmanCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.HuffmanCodec
+Context injecting log into io.scif.codec.HuffmanCodec
+Context injecting formatService into io.scif.codec.HuffmanCodec
+Context injecting handles into io.scif.codec.HuffmanCodec
+ClassUtils scanning io.scif.codec.JPEG2000Codec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.JPEG2000Codec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.JPEG2000Codec
+Context injecting log into io.scif.codec.JPEG2000Codec
+Context injecting formatService into io.scif.codec.JPEG2000Codec
+Context injecting handles into io.scif.codec.JPEG2000Codec
+Context injecting jaiIIOService into io.scif.codec.JPEG2000Codec
+ClassUtils scanning io.scif.codec.JPEGCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.JPEGCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.JPEGCodec
+Context injecting log into io.scif.codec.JPEGCodec
+Context injecting formatService into io.scif.codec.JPEGCodec
+Context injecting handles into io.scif.codec.JPEGCodec
+Context injecting codecService into io.scif.codec.JPEGCodec
+ClassUtils scanning io.scif.codec.LZWCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.LZWCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.LZWCodec
+Context injecting log into io.scif.codec.LZWCodec
+Context injecting formatService into io.scif.codec.LZWCodec
+Context injecting handles into io.scif.codec.LZWCodec
+ClassUtils scanning io.scif.codec.LosslessJPEGCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.LosslessJPEGCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.LosslessJPEGCodec
+Context injecting log into io.scif.codec.LosslessJPEGCodec
+Context injecting formatService into io.scif.codec.LosslessJPEGCodec
+Context injecting handles into io.scif.codec.LosslessJPEGCodec
+Context injecting codecService into io.scif.codec.LosslessJPEGCodec
+ClassUtils scanning io.scif.codec.LuraWaveCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.LuraWaveCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.LuraWaveCodec
+Context injecting log into io.scif.codec.LuraWaveCodec
+Context injecting formatService into io.scif.codec.LuraWaveCodec
+Context injecting handles into io.scif.codec.LuraWaveCodec
+Context injecting luraWaveService into io.scif.codec.LuraWaveCodec
+ClassUtils scanning io.scif.codec.MJPBCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.MJPBCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.MJPBCodec
+Context injecting log into io.scif.codec.MJPBCodec
+Context injecting formatService into io.scif.codec.MJPBCodec
+Context injecting handles into io.scif.codec.MJPBCodec
+Context injecting codecService into io.scif.codec.MJPBCodec
+ClassUtils scanning io.scif.codec.MSRLECodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.MSRLECodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.MSRLECodec
+Context injecting log into io.scif.codec.MSRLECodec
+Context injecting formatService into io.scif.codec.MSRLECodec
+Context injecting handles into io.scif.codec.MSRLECodec
+ClassUtils scanning io.scif.codec.MSVideoCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.MSVideoCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.MSVideoCodec
+Context injecting log into io.scif.codec.MSVideoCodec
+Context injecting formatService into io.scif.codec.MSVideoCodec
+Context injecting handles into io.scif.codec.MSVideoCodec
+ClassUtils scanning io.scif.codec.NikonCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.NikonCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.NikonCodec
+Context injecting log into io.scif.codec.NikonCodec
+Context injecting formatService into io.scif.codec.NikonCodec
+Context injecting handles into io.scif.codec.NikonCodec
+Context injecting codecService into io.scif.codec.NikonCodec
+ClassUtils scanning io.scif.codec.PackbitsCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.PackbitsCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.PackbitsCodec
+Context injecting log into io.scif.codec.PackbitsCodec
+Context injecting formatService into io.scif.codec.PackbitsCodec
+Context injecting handles into io.scif.codec.PackbitsCodec
+ClassUtils scanning io.scif.codec.PassthroughCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.PassthroughCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.PassthroughCodec
+Context injecting log into io.scif.codec.PassthroughCodec
+Context injecting formatService into io.scif.codec.PassthroughCodec
+Context injecting handles into io.scif.codec.PassthroughCodec
+ClassUtils scanning io.scif.codec.QTRLECodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.QTRLECodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.QTRLECodec
+Context injecting log into io.scif.codec.QTRLECodec
+Context injecting formatService into io.scif.codec.QTRLECodec
+Context injecting handles into io.scif.codec.QTRLECodec
+Context injecting dataHandleService into io.scif.codec.QTRLECodec
+ClassUtils scanning io.scif.codec.RPZACodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.RPZACodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.RPZACodec
+Context injecting log into io.scif.codec.RPZACodec
+Context injecting formatService into io.scif.codec.RPZACodec
+Context injecting handles into io.scif.codec.RPZACodec
+ClassUtils scanning io.scif.codec.ZlibCodec for org.scijava.event.EventHandler
+ClassUtils scanning io.scif.codec.ZlibCodec for org.scijava.plugin.Parameter
+Context injecting context into io.scif.codec.ZlibCodec
+Context injecting log into io.scif.codec.ZlibCodec
+Context injecting formatService into io.scif.codec.ZlibCodec
+Context injecting handles into io.scif.codec.ZlibCodec
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+Context injecting context into io.scif.formats.tiff.TiffParser
+Context injecting context into io.scif.SCIFIO
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.app.event.StatusEvent
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+Context injecting context into io.scif.formats.tiff.TiffParser
+Context injecting context into io.scif.SCIFIO
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.DummyHandle
+Context injecting context into org.scijava.io.handle.FileHandle
+Context injecting context into io.scif.formats.tiff.TiffParser
+Context injecting context into io.scif.SCIFIO
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.io.handle.BytesHandle
+Context injecting context into org.scijava.app.event.StatusEvent
+
+//// end imgSaver.saveImg ////
+
+//// start Context.dispose ////
+
+ClassUtils scanning org.scijava.event.ContextDisposingEvent for org.scijava.event.EventHandler
+ClassUtils scanning org.scijava.event.ContextDisposingEvent for org.scijava.plugin.Parameter
+Context injecting context into org.scijava.event.ContextDisposingEvent
+
+//// end Context.dispose ////
+

@@ -87,6 +87,8 @@ public class ImgOpener extends AbstractImgIOComponent {
 	@Parameter
 	private InitializeService initializeService;
 
+	private static boolean allowCellImgFactory = /** @j2sNative false && */true;
+
 	// -- Constructors --
 
 	public ImgOpener() {
@@ -252,24 +254,23 @@ public class ImgOpener extends AbstractImgIOComponent {
 	}
 
 	/**
-	 * Reads in an {@link ImgPlus} from the given initialized {@link Reader},
-	 * using the given {@link ImgFactory} to construct the {@link Img}. The
-	 * {@link Type} T to read is defined by the third parameter.
+	 * Reads in an {@link ImgPlus} from the given initialized {@link Reader}, using
+	 * the given {@link ImgFactory} to construct the {@link Img}. The {@link Type} T
+	 * to read is defined by the third parameter.
 	 * <p>
 	 * NB: Any Reader provided must be wrapped by a {@link PlaneSeparator} filter.
 	 * </p>
 	 *
-	 * @param reader - An initialized {@link Reader} to use for reading image
-	 *          data.
-	 * @param imgFactory - The {@link ImgFactory} to use for creating the
-	 *          resultant {@link ImgPlus}.
-	 * @param config - {@link SCIFIOConfig} to use when opening this dataset
+	 * @param reader     - An initialized {@link Reader} to use for reading image
+	 *                   data.
+	 * @param imgFactory - The {@link ImgFactory} to use for creating the resultant
+	 *                   {@link ImgPlus}.
+	 * @param config     - {@link SCIFIOConfig} to use when opening this dataset
 	 * @return - the {@link ImgPlus} or null
 	 * @throws ImgIOException if there is a problem reading the image data.
 	 */
-	public <T> List<SCIFIOImgPlus<T>> openImgs(Reader reader,
-		final ImgFactory<T> imgFactory, SCIFIOConfig config) throws ImgIOException
-	{
+	public <T> List<SCIFIOImgPlus<T>> openImgs(Reader reader, final ImgFactory<T> imgFactory, SCIFIOConfig config)
+			throws ImgIOException {
 		if (!ReaderFilter.class.isAssignableFrom(reader.getClass())) {
 			reader = new ReaderFilter(reader);
 		}
@@ -283,20 +284,19 @@ public class ImgOpener extends AbstractImgIOComponent {
 
 		if (config.imgOpenerIsOpenAllImages()) {
 			imageRange = new Range("0-" + (reader.getMetadata().getImageCount() - 1));
-		}
-		else {
+		} else {
 			imageRange = config.imgOpenerGetRange();
 		}
 
+		boolean isCellImgFactory = (allowCellImgFactory && SCIFIOCellImgFactory.class.isAssignableFrom(imgFactory.getClass()));
+		
 		for (final Long imageIndex : imageRange) {
 
 			// create image and read metadata
-			final long[] dimLengths = utils().getConstrainedLengths(reader
-				.getMetadata(), i(imageIndex), config);
-			if (SCIFIOCellImgFactory.class.isAssignableFrom(imgFactory.getClass())) {
+			final long[] dimLengths = utils().getConstrainedLengths(reader.getMetadata(), i(imageIndex), config);
+			if (isCellImgFactory) {
 				((SCIFIOCellImgFactory<?>) imgFactory).setReader(reader, i(imageIndex));
-				((SCIFIOCellImgFactory<?>) imgFactory).setSubRegion(config
-					.imgOpenerGetRegion());
+				((SCIFIOCellImgFactory<?>) imgFactory).setSubRegion(config.imgOpenerGetRegion());
 			}
 			final Img<T> img = imgFactory.create(dimLengths);
 			final SCIFIOImgPlus<T> imgPlus = makeImgPlus(img, reader, i(imageIndex));
@@ -307,8 +307,7 @@ public class ImgOpener extends AbstractImgIOComponent {
 			imgPlus.initializeColorTables(i(reader.getPlaneCount(i(imageIndex))));
 
 			if (config.imgOpenerIsComputeMinMax()) {
-				final long[] defaultMinMax = FormatTools.defaultMinMax(reader
-					.getMetadata().get(i(imageIndex)));
+				final long[] defaultMinMax = FormatTools.defaultMinMax(reader.getMetadata().get(i(imageIndex)));
 				for (int c = 0; c < imgPlus.getCompositeChannelCount(); c++) {
 					imgPlus.setChannelMinimum(c, defaultMinMax[0]);
 					imgPlus.setChannelMaximum(c, defaultMinMax[1]);
@@ -323,32 +322,28 @@ public class ImgOpener extends AbstractImgIOComponent {
 
 			// If we have a planar img, read the planes now. Otherwise they
 			// will be read on demand.
-			if (!SCIFIOCellImgFactory.class.isAssignableFrom(imgFactory.getClass())) {
+			if (!isCellImgFactory) {
 				final float startTime = System.currentTimeMillis();
 				final long planeCount = reader.getPlaneCount(i(imageIndex));
 				try {
 					readPlanes(reader, i(imageIndex), imgPlus, config);
-				}
-				catch (FormatException | IOException e) {
+				} catch (FormatException | IOException e) {
 					throw new ImgIOException(e);
 				}
 				final long endTime = System.currentTimeMillis();
 				final float time = (endTime - startTime) / 1000f;
-				statusService.showStatus(id + ": read " +
-					planeCount + " planes in " + time + "s");
+				statusService.showStatus(id + ": read " + planeCount + " planes in " + time + "s");
 			}
 			imgPluses.add(imgPlus);
 		}
 
 		// Close the reader if needed
-		if (SCIFIOCellImgFactory.class.isAssignableFrom(imgFactory.getClass())) {
+		if (isCellImgFactory) {
 			statusService.showStatus("Created CellImg for dynamic loading");
-		}
-		else {
+		} else {
 			try {
 				reader.close();
-			}
-			catch (final IOException e) {
+			} catch (final IOException e) {
 				throw new ImgIOException(e);
 			}
 		}

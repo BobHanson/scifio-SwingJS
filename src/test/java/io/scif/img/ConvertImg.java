@@ -49,27 +49,35 @@ import org.scijava.io.location.FileLocation;
 public class ConvertImg {
 
 	public static void main(final String[] args) throws Exception {
-		final JFileChooser opener = new JFileChooser(System.getProperty(
-			"user.home"));
-		final int result = opener.showOpenDialog(null);
-		if (result == JFileChooser.APPROVE_OPTION) {
-			convertImg(opener.getSelectedFile());
-		}
-		System.exit(0);
+		
+		File file = new File("data/benchmark_v1_2018_x64y64z5c2s1t1.ics");
+		System.out.println("reading " + file.getAbsolutePath());
+		convertImg(file);
+//		
+//		final JFileChooser opener = new JFileChooser(System.getProperty(
+//			"user.home"));
+//		final int result = opener.showOpenDialog(null);
+//		if (result == JFileChooser.APPROVE_OPTION) {
+//			convertImg(opener.getSelectedFile());
+//		}
 	}
 
 	private static void convertImg(final File file) throws Exception {
 		final Context c = new Context();
 		final SCIFIOConfig config = new SCIFIOConfig().imgOpenerSetImgModes(
 			ImgMode.ARRAY);
-		final ImgPlus<?> img = new ImgOpener(c).openImgs(new FileLocation(file
+		System.out.println("reading " + file);
+		final ImgPlus<?> img = new ImgOpener(c)
+				.openImgs(new FileLocation(file
 			.getAbsolutePath()), config).get(0);
 
-		final String outPath = file.getParent() + File.separator + "out_" + img
-			.getName();
+		String name = img.getName() + ".tif";
+		final String outPath = file.getParent() + File.separator + "out_" + name;
+		System.out.println("saving " + outPath);
 		new ImgSaver(c).saveImg(new FileLocation(outPath), img);
-
+		System.out.println("saving complete" + outPath);
 		c.dispose();
+		System.out.println("context disposed");
 	}
 
 }
