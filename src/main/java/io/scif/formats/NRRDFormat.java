@@ -476,6 +476,7 @@ public class NRRDFormat extends AbstractFormat {
 			return getMetadata().get(imageIndex).getAxisLength(Axes.Y);
 		}
 
+		/** @j2sAlias *,*,P,*,* */ 
 		@Override
 		public ByteArrayPlane openPlane(final int imageIndex, final long planeIndex,
 			final ByteArrayPlane plane, final Interval bounds,

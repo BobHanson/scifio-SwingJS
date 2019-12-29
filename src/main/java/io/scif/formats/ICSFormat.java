@@ -82,6 +82,8 @@ import org.scijava.plugin.Plugin;
 @Plugin(type = Format.class, name = "Image Cytometry Standard")
 public class ICSFormat extends AbstractFormat {
 
+	static boolean bhtest = true;
+	
 	// -- AbstractFormat Methods --
 
 	@Override
@@ -385,6 +387,7 @@ public class ICSFormat extends AbstractFormat {
 		// -- Metadata population methods --
 
 		public void put(final String key, final String value) {
+			System.out.println("ICSFormat " + key + " = " + value);
 			if (value != null) keyValPairs.put(key, value);
 		}
 
@@ -986,6 +989,7 @@ public class ICSFormat extends AbstractFormat {
 			if (null == keyValue) {
 				final String key = tokens[0];
 				final String value = concatenateTokens(tokens, 1, tokens.length);
+				System.out.println("ICSFormat creating kvpair " + key + "," + value);
 				keyValue = new String[] { key, value };
 			}
 			return keyValue;
@@ -1198,6 +1202,10 @@ public class ICSFormat extends AbstractFormat {
 
 		// -- Parser API Methods --
 
+		private static boolean bhtest3 = true;
+		
+		private boolean bhtest4 = true;
+		
 		@Parameter
 		private DataHandleService handles;
 
@@ -1386,6 +1394,8 @@ public class ICSFormat extends AbstractFormat {
 	 * Version 1 and 2 supported.
 	 */
 	public static class Reader extends ByteArrayReader<Metadata> {
+		
+		private boolean bhtestr = true;
 
 		@Parameter
 		private DataHandleService dataHandleService;
@@ -1417,9 +1427,10 @@ public class ICSFormat extends AbstractFormat {
 
 		// -- Reader API Methods --
 
+		/** @j2sAlias *,*,P,*,* */ 
 		@Override
 		public ByteArrayPlane openPlane(final int imageIndex, final long planeIndex,
-			final ByteArrayPlane plane, final Interval bounds,
+				 final ByteArrayPlane plane, final Interval bounds,
 			final SCIFIOConfig config) throws FormatException, IOException
 		{
 			final Metadata meta = getMetadata();
