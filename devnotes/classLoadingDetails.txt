@@ -1,0 +1,526 @@
+reading C:\Users\hansonr\git\scifio-SwingJS\data\benchmark_v1_2018_x64y64z5c2s1t1.ics
+Index reading from file:/C:/Users/hansonr/git/scifio-SwingJS/target/classes/META-INF/json/org.scijava.plugin.Plugin
+Index read io.scif.app.SCIFIOApp {name=SCIFIO, type=org.scijava.app.App}
+Index read io.scif.codec.Base64Codec {type=io.scif.codec.Codec}
+Index read io.scif.codec.DefaultCodecService {type=org.scijava.service.Service}
+Index read io.scif.codec.HuffmanCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.JPEG2000Codec {type=io.scif.codec.Codec}
+Index read io.scif.codec.JPEGCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.LosslessJPEGCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.LuraWaveCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.LZWCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.MJPBCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.MSRLECodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.MSVideoCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.NikonCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.PackbitsCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.PassthroughCodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.QTRLECodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.RPZACodec {type=io.scif.codec.Codec}
+Index read io.scif.codec.ZlibCodec {type=io.scif.codec.Codec}
+Index read io.scif.commands.OpenDataset {menu=[{label=File, weight=0.0}, {label=Import}, {label=Image... }], type=org.scijava.command.Command}
+Index read io.scif.commands.SaveAsImage {attrs=[{name=no-legacy}], menu=[{label=File, mnemonic=f, weight=0.0}, {accelerator=shift ^S, label=Save As..., weight=21.0}], type=org.scijava.command.Command}
+Index read io.scif.commands.SaveImage {attrs=[{name=no-legacy}], menu=[{label=File, mnemonic=f, weight=0.0}, {accelerator=^S, label=Save, mnemonic=s, weight=20.0}], type=org.scijava.command.Command}
+Index read io.scif.DefaultMetadataService {type=org.scijava.service.Service}
+Index read io.scif.DefaultTranslator {priority=-10000.0, type=io.scif.Translator}
+Index read io.scif.filters.ChannelFiller {type=io.scif.filters.Filter}
+Index read io.scif.filters.DimensionSwapper {type=io.scif.filters.Filter}
+Index read io.scif.filters.FileStitcher {type=io.scif.filters.Filter}
+Index read io.scif.filters.MinMaxFilter {type=io.scif.filters.Filter}
+Index read io.scif.filters.PlaneSeparator {type=io.scif.filters.Filter}
+Index read io.scif.filters.PlaneSeparatorMetadata {type=io.scif.filters.MetadataWrapper}
+Index read io.scif.formats.APNGFormat$APNGTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.APNGFormat {name=Animated PNG, type=io.scif.Format}
+Index read io.scif.formats.AVIFormat$Translator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.AVIFormat {name=Audio Video Interleave, type=io.scif.Format}
+Index read io.scif.formats.BMPFormat {name=Windows Bitmap, type=io.scif.Format}
+Index read io.scif.formats.DICOMFormat {name=DICOM, type=io.scif.Format}
+Index read io.scif.formats.EPSFormat$EPSTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.EPSFormat {name=Encapsulated PostScript, type=io.scif.Format}
+Index read io.scif.formats.FITSFormat {name=Flexible Image Transport System, type=io.scif.Format}
+Index read io.scif.formats.GIFFormat {name=Graphics Interchange Format, type=io.scif.Format}
+Index read io.scif.formats.ICSFormat$ICSTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.ICSFormat {name=Image Cytometry Standard, type=io.scif.Format}
+Index read io.scif.formats.ImageIOFormat$ImageIOTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.JPEG2000Format {name=JPEG-2000, type=io.scif.Format}
+Index read io.scif.formats.JPEGFormat {name=JPEG, type=io.scif.Format}
+Index read io.scif.formats.JPEGTileFormat {name=Tile JPEG, priority=-100.0, type=io.scif.Format}
+Index read io.scif.formats.KontronFormat {name=Kontron, type=io.scif.Format}
+Index read io.scif.formats.MicromanagerFormat$MicromanagerTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.MicromanagerFormat {name=Micro-Manager, type=io.scif.Format}
+Index read io.scif.formats.MinimalTIFFFormat {name=Minimal TIFF, priority=-10000.0, type=io.scif.Format}
+Index read io.scif.formats.MNGFormat {name=Multiple Network Graphics, type=io.scif.Format}
+Index read io.scif.formats.NRRDFormat {name=NRRD, type=io.scif.Format}
+Index read io.scif.formats.OBFFormat {name=OBF, type=io.scif.Format}
+Index read io.scif.formats.PCXFormat {name=PCX, type=io.scif.Format}
+Index read io.scif.formats.PGMFormat {name=Portable Gray Map, type=io.scif.Format}
+Index read io.scif.formats.qt.DefaultQTJavaService {type=org.scijava.service.Service}
+Index read io.scif.formats.qt.LegacyQTFormat$LegacyQTTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.qt.LegacyQTFormat {name=QuickTime, priority=-100.0, type=io.scif.Format}
+Index read io.scif.formats.qt.NativeQTFormat$NativeQTTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.qt.NativeQTFormat {name=QuickTime, type=io.scif.Format}
+Index read io.scif.formats.qt.PICTFormat {name=PICT, type=io.scif.Format}
+Index read io.scif.formats.ScancoISQFormat {name=Scanco ISQ, type=io.scif.Format}
+Index read io.scif.formats.StratecPQCTFormat {name=Stratec pQCT, type=io.scif.Format}
+Index read io.scif.formats.TestImgFormat$TestImgTranslator {priority=-100.0, type=io.scif.Translator}
+Index read io.scif.formats.TestImgFormat {name=Simulated data, type=io.scif.Format}
+Index read io.scif.formats.tiff.DefaultTiffService {type=org.scijava.service.Service}
+Index read io.scif.formats.TIFFFormat$TIFFTranslator {priority=-9999.0, type=io.scif.Translator}
+Index read io.scif.formats.TIFFFormat {name=Tagged Image File Format, priority=-9999.0, type=io.scif.Format}
+Index read io.scif.formats.TIFFJAIFormat {name=Tagged Image File Format, priority=-10001.0, type=io.scif.Format}
+Index read io.scif.gui.DefaultGUIService {type=org.scijava.service.Service}
+Index read io.scif.img.converters.ArrayDataAccessConverter {name=ArrayDataAccess, type=io.scif.img.converters.PlaneConverter}
+Index read io.scif.img.converters.DefaultPlaneConverterService {type=org.scijava.service.Service}
+Index read io.scif.img.converters.PlanarAccessConverter {name=PlanarAccess, type=io.scif.img.converters.PlaneConverter}
+Index read io.scif.img.converters.RandomAccessConverter {name=Default, type=io.scif.img.converters.PlaneConverter}
+Index read io.scif.img.DefaultImgUtilityService {type=org.scijava.service.Service}
+Index read io.scif.img.ImgPlusCtxCleaningProvider {type=io.scif.refs.RefProvider}
+Index read io.scif.io.DatasetIOPlugin {priority=-100.0, type=org.scijava.io.IOPlugin}
+Index read io.scif.io.location.TestImgLocationResolver {priority=100.0, type=org.scijava.io.location.LocationResolver}
+Index read io.scif.refs.DefaultRefManagerService {type=org.scijava.service.Service}
+Index read io.scif.SCIFIO {type=org.scijava.Gateway}
+Index read io.scif.services.DefaultDatasetIOService {type=org.scijava.service.Service}
+Index read io.scif.services.DefaultFilePatternService {type=org.scijava.service.Service}
+Index read io.scif.services.DefaultFormatService {type=org.scijava.service.Service}
+Index read io.scif.services.DefaultInitializeService {priority=-100.0, type=org.scijava.service.Service}
+Index read io.scif.services.DefaultTranslatorService {type=org.scijava.service.Service}
+Index read io.scif.services.JAIIIOServiceImpl {type=org.scijava.service.Service}
+Index read io.scif.xml.DefaultXMLService {type=org.scijava.service.Service}
+IndexReader found !class:test-classes.io.scif.util.DefaultSampleFilesService
+Index read null {type=org.scijava.service.Service}
+Index read org.scijava.prefs.DefaultPrefService {type=org.scijava.service.Service}
+Index read org.scijava.event.DefaultEventHistory {type=org.scijava.service.Service}
+Index read org.scijava.event.DefaultEventService {priority=100000.0, type=org.scijava.service.Service}
+Index read org.scijava.text.io.TextIOPlugin {priority=-101.0, type=org.scijava.io.IOPlugin}
+Index read org.scijava.text.DefaultTextService {type=org.scijava.service.Service}
+Index read org.scijava.input.DefaultInputService {type=org.scijava.service.Service}
+Index read org.scijava.object.DefaultObjectService {type=org.scijava.service.Service}
+Index read org.scijava.run.DefaultRunService {type=org.scijava.service.Service}
+Index read org.scijava.run.console.RunArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.io.handle.DummyHandle {type=org.scijava.io.handle.DataHandle}
+Index read org.scijava.io.handle.FileHandle {type=org.scijava.io.handle.DataHandle}
+Index read org.scijava.io.handle.DefaultDataHandleService {type=org.scijava.service.Service}
+Index read org.scijava.io.handle.BytesHandle {type=org.scijava.io.handle.DataHandle}
+Index read org.scijava.io.DefaultRecentFileService {type=org.scijava.service.Service}
+Index read org.scijava.io.location.DefaultLocationService {type=org.scijava.service.Service}
+Index read org.scijava.io.location.FileLocationResolver {type=org.scijava.io.location.LocationResolver}
+Index read org.scijava.io.DefaultIOService {type=org.scijava.service.Service}
+Index read org.scijava.io.console.OpenArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.io.nio.DefaultNIOService {type=org.scijava.service.Service}
+Index read org.scijava.ui.dnd.FileDragAndDropHandler {priority=-100.0, type=org.scijava.ui.dnd.DragAndDropHandler}
+Index read org.scijava.ui.dnd.ScriptFileDragAndDropHandler {type=org.scijava.ui.dnd.DragAndDropHandler}
+Index read org.scijava.ui.dnd.DefaultDragAndDropService {type=org.scijava.service.Service}
+Index read org.scijava.ui.dnd.ListDragAndDropHandler {type=org.scijava.ui.dnd.DragAndDropHandler}
+Index read org.scijava.ui.headless.HeadlessDisplayViewer {type=org.scijava.ui.viewer.DisplayViewer}
+Index read org.scijava.ui.headless.HeadlessUI {name=headless, priority=-10000.0, type=org.scijava.ui.UserInterface}
+Index read org.scijava.ui.FilePreprocessor {priority=-9999.5, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.ui.UIPreprocessor {priority=10000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.ui.DefaultUIService {type=org.scijava.service.Service}
+Index read org.scijava.ui.FileListPreprocessor {priority=-9999.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.ui.console.UIArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.ui.console.HeadlessArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.ui.console.ShowUIArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.download.DefaultDownloadService {type=org.scijava.service.Service}
+Index read org.scijava.welcome.DefaultWelcomeService {type=org.scijava.service.Service}
+Index read org.scijava.app.SciJavaApp {name=SciJava, priority=-100.0, type=org.scijava.app.App}
+Index read org.scijava.app.DefaultStatusService {type=org.scijava.service.Service}
+Index read org.scijava.app.DefaultAppService {type=org.scijava.service.Service}
+Index read org.scijava.script.run.ScriptCodeRunner {type=org.scijava.run.CodeRunner}
+Index read org.scijava.script.DefaultScriptService {type=org.scijava.service.Service}
+Index read org.scijava.script.DefaultScriptHeaderService {type=org.scijava.service.Service}
+Index read org.scijava.script.process.ParameterScriptProcessor {type=org.scijava.script.process.ScriptProcessor}
+Index read org.scijava.script.process.ScriptDirectiveScriptProcessor {priority=100.0, type=org.scijava.script.process.ScriptProcessor}
+Index read org.scijava.script.process.ShebangScriptProcessor {type=org.scijava.script.process.ScriptProcessor}
+Index read org.scijava.script.process.DefaultScriptProcessorService {type=org.scijava.service.Service}
+Index read org.scijava.script.console.RunScriptArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.main.DefaultMainService {type=org.scijava.service.Service}
+Index read org.scijava.main.run.MainCodeRunner {priority=-100.0, type=org.scijava.run.CodeRunner}
+Index read org.scijava.main.console.MainArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.tool.DefaultToolService {type=org.scijava.service.Service}
+Index read org.scijava.SciJava {type=org.scijava.Gateway}
+Index read org.scijava.platform.DefaultPlatformService {type=org.scijava.service.Service}
+Index read org.scijava.platform.DefaultAppEventService {priority=-100.0, type=org.scijava.service.Service}
+Index read org.scijava.platform.DefaultPlatform {name=Default, priority=-10000.0, type=org.scijava.platform.Platform}
+Index read org.scijava.widget.DefaultWidgetService {type=org.scijava.service.Service}
+Index read org.scijava.command.run.CommandCodeRunner {type=org.scijava.run.CodeRunner}
+Index read org.scijava.command.DefaultCommandService {type=org.scijava.service.Service}
+Index read org.scijava.command.console.RunArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.task.DefaultTaskService {type=org.scijava.service.Service}
+Index read org.scijava.thread.DefaultThreadService {type=org.scijava.service.Service}
+Index read org.scijava.convert.ArrayConverters$BoolArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$BoolArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.FileListConverters$StringToFileArrayConverter {priority=0.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$BigIntegerToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$IntArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToDoubleConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToBigIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$LongArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToLongConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$FloatToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.DefaultConvertService {type=org.scijava.service.Service}
+Index read org.scijava.convert.NumberConverters$ByteToFloatConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToLongConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$IntegerToDoubleConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.FileListConverters$StringToFileConverter {priority=0.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToFloatConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$ByteArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.DefaultConverter {priority=-1000000.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.FileListConverters$FileArrayToStringConverter {priority=0.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$LongArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$ShortArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$IntArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToBigIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$LongToBigIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$LongToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$FloatToDoubleConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$IntegerToBigIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.FileListConverters$FileToStringConverter {priority=0.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$DoubleArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$IntegerToLongConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$IntegerToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$CharArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NullConverter {priority=1.0E300, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$FloatArrayUnwrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$FloatArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.CastingConverter {priority=1000000.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$DoubleArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$CharArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToIntegerConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ShortToDoubleConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$ByteArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.ArrayConverters$ShortArrayWrapper {priority=100.0, type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$ByteToShortConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.convert.NumberConverters$DoubleToBigDecimalConverter {type=org.scijava.convert.Converter}
+Index read org.scijava.parse.DefaultParseService {type=org.scijava.service.Service}
+Index read org.scijava.log.StderrLogService {priority=-100.0, type=org.scijava.service.Service}
+Index read org.scijava.module.DefaultModuleService {type=org.scijava.service.Service}
+Index read org.scijava.module.run.ModuleCodeRunner {type=org.scijava.run.CodeRunner}
+Index read org.scijava.module.process.InitPreprocessor {priority=100.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.DebugPostprocessor {priority=1.0E300, type=org.scijava.module.process.PostprocessorPlugin}
+Index read org.scijava.module.process.GatewayPreprocessor {priority=20000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.DefaultValuePreprocessor {priority=10000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.ServicePreprocessor {priority=20000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.ValidityPreprocessor {priority=30000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.CheckInputsPreprocessor {priority=-10002.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.LoggerPreprocessor {type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.DebugPreprocessor {priority=1.0E300, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.LoadInputsPreprocessor {priority=-9999.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.module.process.SaveInputsPreprocessor {priority=-10001.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.display.DisplayPostprocessor {priority=-10000.0, type=org.scijava.module.process.PostprocessorPlugin}
+Index read org.scijava.display.DefaultTextDisplay {priority=-100.0, type=org.scijava.display.Display}
+Index read org.scijava.display.ActiveDisplayPreprocessor {priority=10000.0, type=org.scijava.module.process.PreprocessorPlugin}
+Index read org.scijava.display.DefaultDisplayService {type=org.scijava.service.Service}
+Index read org.scijava.menu.DefaultMenuService {type=org.scijava.service.Service}
+Index read org.scijava.cache.DefaultCacheService {priority=-10000.0, type=org.scijava.service.Service}
+Index read org.scijava.console.SystemPropertyArgument {type=org.scijava.console.ConsoleArgument}
+Index read org.scijava.console.DefaultConsoleService {type=org.scijava.service.Service}
+Index read org.scijava.startup.DefaultStartupService {type=org.scijava.service.Service}
+Index read org.scijava.options.DefaultOptionsService {type=org.scijava.service.Service}
+Index read org.scijava.plugin.DefaultPluginService {type=org.scijava.service.Service}
+PluginIndex found 219
+ServiceHelper getPlugins returned 56
+PluginInfo.loadClass org.scijava.event.DefaultEventService
+PluginInfo.loadClass io.scif.DefaultMetadataService
+PluginInfo.loadClass io.scif.codec.DefaultCodecService
+PluginInfo.loadClass io.scif.formats.qt.DefaultQTJavaService
+PluginInfo.loadClass io.scif.formats.tiff.DefaultTiffService
+PluginInfo.loadClass io.scif.gui.DefaultGUIService
+PluginInfo.loadClass io.scif.img.DefaultImgUtilityService
+PluginInfo.loadClass io.scif.img.converters.DefaultPlaneConverterService
+PluginInfo.loadClass io.scif.refs.DefaultRefManagerService
+PluginInfo.loadClass io.scif.services.DefaultDatasetIOService
+PluginInfo.loadClass io.scif.services.DefaultFilePatternService
+PluginInfo.loadClass io.scif.services.DefaultFormatService
+PluginInfo.loadClass io.scif.services.DefaultTranslatorService
+PluginInfo.loadClass io.scif.services.JAIIIOServiceImpl
+PluginInfo.loadClass io.scif.xml.DefaultXMLService
+PluginInfo.loadClass org.scijava.app.DefaultAppService
+PluginInfo.loadClass org.scijava.app.DefaultStatusService
+PluginInfo.loadClass org.scijava.command.DefaultCommandService
+PluginInfo.loadClass org.scijava.console.DefaultConsoleService
+PluginInfo.loadClass org.scijava.convert.DefaultConvertService
+PluginInfo.loadClass org.scijava.display.DefaultDisplayService
+PluginInfo.loadClass org.scijava.download.DefaultDownloadService
+PluginInfo.loadClass org.scijava.event.DefaultEventHistory
+PluginInfo.loadClass org.scijava.input.DefaultInputService
+PluginInfo.loadClass org.scijava.io.DefaultIOService
+PluginInfo.loadClass org.scijava.io.DefaultRecentFileService
+PluginInfo.loadClass org.scijava.io.handle.DefaultDataHandleService
+PluginInfo.loadClass org.scijava.io.location.DefaultLocationService
+PluginInfo.loadClass org.scijava.io.nio.DefaultNIOService
+PluginInfo.loadClass org.scijava.main.DefaultMainService
+PluginInfo.loadClass org.scijava.menu.DefaultMenuService
+PluginInfo.loadClass org.scijava.module.DefaultModuleService
+PluginInfo.loadClass org.scijava.object.DefaultObjectService
+PluginInfo.loadClass org.scijava.options.DefaultOptionsService
+PluginInfo.loadClass org.scijava.parse.DefaultParseService
+PluginInfo.loadClass org.scijava.platform.DefaultPlatformService
+PluginInfo.loadClass org.scijava.plugin.DefaultPluginService
+PluginInfo.loadClass org.scijava.prefs.DefaultPrefService
+PluginInfo.loadClass org.scijava.run.DefaultRunService
+PluginInfo.loadClass org.scijava.script.DefaultScriptHeaderService
+PluginInfo.loadClass org.scijava.script.DefaultScriptService
+PluginInfo.loadClass org.scijava.script.process.DefaultScriptProcessorService
+PluginInfo.loadClass org.scijava.startup.DefaultStartupService
+PluginInfo.loadClass org.scijava.task.DefaultTaskService
+PluginInfo.loadClass org.scijava.text.DefaultTextService
+PluginInfo.loadClass org.scijava.thread.DefaultThreadService
+PluginInfo.loadClass org.scijava.tool.DefaultToolService
+PluginInfo.loadClass org.scijava.ui.DefaultUIService
+PluginInfo.loadClass org.scijava.ui.dnd.DefaultDragAndDropService
+PluginInfo.loadClass org.scijava.welcome.DefaultWelcomeService
+PluginInfo.loadClass org.scijava.widget.DefaultWidgetService
+PluginInfo.loadClass io.scif.services.DefaultInitializeService
+PluginInfo.loadClass org.scijava.log.StderrLogService
+PluginInfo.loadClass org.scijava.platform.DefaultAppEventService
+PluginInfo.loadClass org.scijava.cache.DefaultCacheService
+ServiceHelper found 55 classes
+
+ServiceHelper loadService org.scijava.event.DefaultEventService
+
+ServiceHelper loadService org.scijava.log.LogService
+ObjectIndex adding org.scijava.log.StderrLogService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.thread.ThreadService
+ObjectIndex adding org.scijava.thread.DefaultThreadService as org.scijava.service.Service
+ObjectIndex adding org.scijava.event.DefaultEventService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.DefaultMetadataService
+ObjectIndex adding io.scif.DefaultMetadataService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.codec.DefaultCodecService
+
+ServiceHelper loadService org.scijava.plugin.PluginService
+ObjectIndex adding org.scijava.plugin.DefaultPluginService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.object.ObjectService
+ObjectIndex adding org.scijava.object.DefaultObjectService as org.scijava.service.Service
+ObjectIndex adding io.scif.codec.DefaultCodecService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.formats.qt.DefaultQTJavaService
+ObjectIndex adding io.scif.formats.qt.DefaultQTJavaService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.formats.tiff.DefaultTiffService
+ObjectIndex adding io.scif.formats.tiff.DefaultTiffService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.gui.DefaultGUIService
+ObjectIndex adding io.scif.gui.DefaultGUIService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.img.DefaultImgUtilityService
+ObjectIndex adding io.scif.img.DefaultImgUtilityService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.img.converters.DefaultPlaneConverterService
+ObjectIndex adding io.scif.img.converters.DefaultPlaneConverterService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.refs.DefaultRefManagerService
+ObjectIndex adding io.scif.refs.DefaultRefManagerService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.services.DefaultDatasetIOService
+
+ServiceHelper loadService io.scif.services.FormatService
+
+ServiceHelper loadService org.scijava.app.AppService
+ObjectIndex adding org.scijava.app.DefaultAppService as org.scijava.service.Service
+ObjectIndex adding io.scif.services.DefaultFormatService as org.scijava.service.Service
+PluginInfo.loadClass io.scif.formats.APNGFormat
+PluginInfo.loadClass io.scif.formats.AVIFormat
+PluginInfo.loadClass io.scif.formats.DICOMFormat
+PluginInfo.loadClass io.scif.formats.EPSFormat
+PluginInfo.loadClass io.scif.formats.FITSFormat
+PluginInfo.loadClass io.scif.formats.GIFFormat
+PluginInfo.loadClass io.scif.formats.ICSFormat
+PluginInfo.loadClass io.scif.formats.JPEGFormat
+PluginInfo.loadClass io.scif.formats.JPEG2000Format
+PluginInfo.loadClass io.scif.formats.KontronFormat
+PluginInfo.loadClass io.scif.formats.MicromanagerFormat
+PluginInfo.loadClass io.scif.formats.MNGFormat
+PluginInfo.loadClass io.scif.formats.NRRDFormat
+PluginInfo.loadClass io.scif.formats.OBFFormat
+PluginInfo.loadClass io.scif.formats.PCXFormat
+PluginInfo.loadClass io.scif.formats.qt.PICTFormat
+PluginInfo.loadClass io.scif.formats.PGMFormat
+PluginInfo.loadClass io.scif.formats.qt.NativeQTFormat
+PluginInfo.loadClass io.scif.formats.ScancoISQFormat
+PluginInfo.loadClass io.scif.formats.TestImgFormat
+PluginInfo.loadClass io.scif.formats.StratecPQCTFormat
+PluginInfo.loadClass io.scif.formats.BMPFormat
+PluginInfo.loadClass io.scif.formats.qt.LegacyQTFormat
+PluginInfo.loadClass io.scif.formats.JPEGTileFormat
+PluginInfo.loadClass io.scif.formats.TIFFFormat
+PluginInfo.loadClass io.scif.formats.MinimalTIFFFormat
+PluginInfo.loadClass io.scif.formats.TIFFJAIFormat
+
+ServiceHelper loadService net.imagej.DatasetService
+[ERROR] No compatible service: net.imagej.DatasetService
+
+ServiceHelper loadService org.scijava.io.location.LocationService
+ObjectIndex adding org.scijava.io.location.DefaultLocationService as org.scijava.service.Service
+ObjectIndex adding io.scif.services.DefaultDatasetIOService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.services.DefaultFilePatternService
+
+ServiceHelper loadService org.scijava.io.handle.DataHandleService
+ObjectIndex adding org.scijava.io.handle.DefaultDataHandleService as org.scijava.service.Service
+ObjectIndex adding io.scif.services.DefaultFilePatternService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.services.DefaultTranslatorService
+ObjectIndex adding io.scif.services.DefaultTranslatorService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.services.JAIIIOServiceImpl
+ObjectIndex adding io.scif.services.JAIIIOServiceImpl as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.xml.DefaultXMLService
+ObjectIndex adding io.scif.xml.DefaultXMLService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.app.DefaultStatusService
+ObjectIndex adding org.scijava.app.DefaultStatusService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.command.DefaultCommandService
+
+ServiceHelper loadService org.scijava.module.ModuleService
+
+ServiceHelper loadService org.scijava.prefs.PrefService
+ObjectIndex adding org.scijava.prefs.DefaultPrefService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.convert.ConvertService
+ObjectIndex adding org.scijava.convert.DefaultConvertService as org.scijava.service.Service
+ObjectIndex adding org.scijava.module.DefaultModuleService as org.scijava.service.Service
+ObjectIndex adding org.scijava.command.DefaultCommandService as org.scijava.service.Service
+DefaultCommandService wrapping class='io.scif.commands.OpenDataset', menu='File > Import > Image... ', priority=0.0, enabled=true, pluginType=Command
+DefaultCommandService wrapping class='io.scif.commands.SaveImage', menu='File > Save', priority=0.0, enabled=true, pluginType=Command
+DefaultCommandService wrapping class='io.scif.commands.SaveAsImage', menu='File > Save As...', priority=0.0, enabled=true, pluginType=Command
+
+ServiceHelper loadService org.scijava.console.DefaultConsoleService
+ObjectIndex adding org.scijava.console.DefaultConsoleService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.display.DefaultDisplayService
+ObjectIndex adding org.scijava.display.DefaultDisplayService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.download.DefaultDownloadService
+
+ServiceHelper loadService org.scijava.task.TaskService
+ObjectIndex adding org.scijava.task.DefaultTaskService as org.scijava.service.Service
+ObjectIndex adding org.scijava.download.DefaultDownloadService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.event.DefaultEventHistory
+ObjectIndex adding org.scijava.event.DefaultEventHistory as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.input.DefaultInputService
+ObjectIndex adding org.scijava.input.DefaultInputService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.io.DefaultIOService
+ObjectIndex adding org.scijava.io.DefaultIOService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.io.DefaultRecentFileService
+ObjectIndex adding org.scijava.io.DefaultRecentFileService as org.scijava.service.Service
+Dec 29, 2019 9:47:26 AM java.util.prefs.WindowsPreferences <init>
+WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+
+ServiceHelper loadService org.scijava.io.nio.DefaultNIOService
+ObjectIndex adding org.scijava.io.nio.DefaultNIOService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.main.DefaultMainService
+ObjectIndex adding org.scijava.main.DefaultMainService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.menu.DefaultMenuService
+ObjectIndex adding org.scijava.menu.DefaultMenuService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.options.DefaultOptionsService
+ObjectIndex adding org.scijava.options.DefaultOptionsService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.parse.DefaultParseService
+ObjectIndex adding org.scijava.parse.DefaultParseService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.platform.DefaultPlatformService
+
+ServiceHelper loadService org.scijava.platform.AppEventService
+ObjectIndex adding org.scijava.platform.DefaultAppEventService as org.scijava.service.Service
+ObjectIndex adding org.scijava.platform.DefaultPlatformService as org.scijava.service.Service
+PluginInfo.loadClass org.scijava.platform.DefaultPlatform
+
+ServiceHelper loadService org.scijava.run.DefaultRunService
+ObjectIndex adding org.scijava.run.DefaultRunService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.script.DefaultScriptHeaderService
+ObjectIndex adding org.scijava.script.DefaultScriptHeaderService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.script.DefaultScriptService
+
+ServiceHelper loadService org.scijava.script.process.ScriptProcessorService
+ObjectIndex adding org.scijava.script.process.DefaultScriptProcessorService as org.scijava.service.Service
+ObjectIndex adding org.scijava.script.DefaultScriptService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.startup.DefaultStartupService
+ObjectIndex adding org.scijava.startup.DefaultStartupService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.text.DefaultTextService
+ObjectIndex adding org.scijava.text.DefaultTextService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.tool.DefaultToolService
+ObjectIndex adding org.scijava.tool.DefaultToolService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.ui.DefaultUIService
+ObjectIndex adding org.scijava.ui.DefaultUIService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.ui.dnd.DefaultDragAndDropService
+ObjectIndex adding org.scijava.ui.dnd.DefaultDragAndDropService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.welcome.DefaultWelcomeService
+ObjectIndex adding org.scijava.welcome.DefaultWelcomeService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.widget.DefaultWidgetService
+ObjectIndex adding org.scijava.widget.DefaultWidgetService as org.scijava.service.Service
+
+ServiceHelper loadService io.scif.services.DefaultInitializeService
+ObjectIndex adding io.scif.services.DefaultInitializeService as org.scijava.service.Service
+
+ServiceHelper loadService org.scijava.cache.DefaultCacheService
+ObjectIndex adding org.scijava.cache.DefaultCacheService as org.scijava.service.Service
+reading data\benchmark_v1_2018_x64y64z5c2s1t1.ics
+PluginInfo.loadClass org.scijava.io.handle.BytesHandle
+PluginInfo.loadClass io.scif.app.SCIFIOApp
+PluginInfo.loadClass org.scijava.app.SciJavaApp
+PluginInfo.loadClass org.scijava.ui.headless.HeadlessUI
+PluginInfo.loadClass org.scijava.io.handle.DummyHandle
+PluginInfo.loadClass org.scijava.io.handle.FileHandle
+PluginInfo.loadClass io.scif.filters.ChannelFiller
+PluginInfo.loadClass io.scif.filters.DimensionSwapper
+PluginInfo.loadClass io.scif.filters.FileStitcher
+PluginInfo.loadClass io.scif.filters.MinMaxFilter
+PluginInfo.loadClass io.scif.filters.PlaneSeparator
+PluginInfo.loadClass io.scif.img.converters.ArrayDataAccessConverter
+PluginInfo.loadClass io.scif.img.converters.RandomAccessConverter
+PluginInfo.loadClass io.scif.img.converters.PlanarAccessConverter
+saving data\out_benchmark_v1_2018_x64y64z5c2s1t1.ids.tif
+PluginInfo.loadClass io.scif.formats.APNGFormat$APNGTranslator
+PluginInfo.loadClass io.scif.formats.AVIFormat$Translator
+PluginInfo.loadClass io.scif.formats.EPSFormat$EPSTranslator
+PluginInfo.loadClass io.scif.formats.ICSFormat$ICSTranslator
+PluginInfo.loadClass io.scif.formats.ImageIOFormat$ImageIOTranslator
+PluginInfo.loadClass io.scif.formats.MicromanagerFormat$MicromanagerTranslator
+PluginInfo.loadClass io.scif.formats.TestImgFormat$TestImgTranslator
+PluginInfo.loadClass io.scif.formats.qt.LegacyQTFormat$LegacyQTTranslator
+PluginInfo.loadClass io.scif.formats.qt.NativeQTFormat$NativeQTTranslator
+PluginInfo.loadClass io.scif.formats.TIFFFormat$TIFFTranslator
+PluginInfo.loadClass io.scif.DefaultTranslator
+PluginInfo.loadClass io.scif.codec.Base64Codec
+PluginInfo.loadClass io.scif.codec.HuffmanCodec
+PluginInfo.loadClass io.scif.codec.JPEG2000Codec
+PluginInfo.loadClass io.scif.codec.JPEGCodec
+PluginInfo.loadClass io.scif.codec.LZWCodec
+PluginInfo.loadClass io.scif.codec.LosslessJPEGCodec
+PluginInfo.loadClass io.scif.codec.LuraWaveCodec
+PluginInfo.loadClass io.scif.codec.MJPBCodec
+PluginInfo.loadClass io.scif.codec.MSRLECodec
+PluginInfo.loadClass io.scif.codec.MSVideoCodec
+PluginInfo.loadClass io.scif.codec.NikonCodec
+PluginInfo.loadClass io.scif.codec.PackbitsCodec
+PluginInfo.loadClass io.scif.codec.PassthroughCodec
+PluginInfo.loadClass io.scif.codec.QTRLECodec
+PluginInfo.loadClass io.scif.codec.RPZACodec
+PluginInfo.loadClass io.scif.codec.ZlibCodec
+saving complete data\out_benchmark_v1_2018_x64y64z5c2s1t1.ids.tif
+context disposed
