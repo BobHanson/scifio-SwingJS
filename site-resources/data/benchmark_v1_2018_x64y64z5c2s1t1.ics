@@ -1,0 +1,15 @@
+	
+ics_version	1.0
+filename	E:\temp\benchmark_v1_2018_x64y64z5c2s1t1.ids
+layout	parameters	6
+layout	order	bits	x	y	z	t	ch	
+layout	sizes	16	64	64	5	1	2	
+layout	significant_bits	16
+representation	format	integer
+representation	sign	unsigned
+representation	compression	uncompressed
+representation	byte_order	1	2	
+parameter	scale	1.000000	3.6260623	3.6260623	10.0	0.0	1.0	
+parameter	units	bits	micrometers	micrometers	micrometers	seconds	
+
+end
