@@ -93,6 +93,7 @@ class IndexReader {
 				String key = readString();
 				expect(':');
 				Object value = next();
+				// BH 2019.12.29 allows for selective editing of json file 
 				if (key.startsWith("!")) { 
 					System.out.println("IndexReader found " + key + ":" + value);
 				}
