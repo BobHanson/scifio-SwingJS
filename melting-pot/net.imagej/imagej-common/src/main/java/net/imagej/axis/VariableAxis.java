@@ -89,21 +89,33 @@ public abstract class VariableAxis extends AbstractCalibratedAxis {
 		final StringBuilder sb = new StringBuilder();
 		// NB: Split general equation on potential variables, including delimiters.
 		// For an explanation, see: http://stackoverflow.com/a/279337
-		final String[] tokens =
-			generalEquation().split("(?<=\\w)(?=\\W)|(?<=\\W)(?=\\w)");
-		for (final String token : tokens) {
+		// BH But not all browsers can handle look-behind.
+		// So we allow for ending up with \\W\\w+ by just splitting before an operator
+		String s = generalEquation().replaceAll(" ","");
+		String pat = /** @j2sNative "(?=\\W)" || */ "(?<=\\w)(?=\\W)|(?<=\\W)(?=\\w)";		
+		final String[] tokens = s.split(pat);
+		for (String token : tokens) {
 			if (token.matches("\\w+")) {
-				// token might be a variable; check the vars table
-				final Double value = vars.get(token);
-				if (value != null) {
-					// token *is* a variable; substitute the value!
-					sb.append("(");
-					sb.append(value);
-					sb.append(")");
-					continue;
-				}
+				// abc
+			} else if (token.matches("\\W\\w+")) {
+				// JavaScript
+				// +abc
+				sb.append(token.charAt(0));
+				token = token.substring(1);
+			} else {
+				sb.append(token);
+				continue;
 			}
-			sb.append(token);
+			// token might be a variable; check the vars table
+			final Double value = vars.get(token);
+			if (value == null) {
+				sb.append(token);
+			} else {
+				// token *is* a variable; substitute the value!
+				sb.append("(");
+				sb.append(value);
+				sb.append(")");
+			}
 		}
 		return sb.toString();
 	}

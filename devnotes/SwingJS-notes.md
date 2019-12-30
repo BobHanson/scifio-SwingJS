@@ -83,4 +83,10 @@ Adding
 
 		/** @j2sAlias *,*,P,*,* */ 
 
-prior to the @Override instructs the transpiler to supply an alias for that method -- a second name that uses $TP instead of $io\_scif\_ByteArrayPlane. 
+prior to the @Override instructs the transpiler to supply an alias for that method -- a second name that uses $TP instead of $io\_scif\_ByteArrayPlane.
+
+
+11. Firefox does not recognize Regex look-behind ...(?<=...)...
+As a result org.imagej.axis.VariableAxis.getParticularEquation needed
+modification to use (?=\\W) instead of (?<=\\w)(?=\\W)|(?<=\\W)(?=\\w)
+-- that is, split just before any operator, not at the end|start of words. 

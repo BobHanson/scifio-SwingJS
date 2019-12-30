@@ -82,8 +82,6 @@ import org.scijava.plugin.Plugin;
 @Plugin(type = Format.class, name = "Image Cytometry Standard")
 public class ICSFormat extends AbstractFormat {
 
-	static boolean bhtest = true;
-	
 	// -- AbstractFormat Methods --
 
 	@Override
