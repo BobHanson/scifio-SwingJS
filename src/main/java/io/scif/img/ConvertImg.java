@@ -31,6 +31,7 @@ package io.scif.img;
 
 import io.scif.config.SCIFIOConfig;
 import io.scif.config.SCIFIOConfig.ImgMode;
+import io.scif.gui.ImageViewer;
 
 import java.io.File;
 
@@ -59,7 +60,7 @@ public class ConvertImg {
 		final ImgPlus<?> img = new ImgOpener(c)
 				.openImgs(new FileLocation(file
 			.getAbsolutePath()), config).get(0);
-
+		
 		String name = img.getName() + ".tif";
 		final String outPath = file.getParent() + File.separator + "out_" + name;
 		System.out.println("saving " + outPath);
