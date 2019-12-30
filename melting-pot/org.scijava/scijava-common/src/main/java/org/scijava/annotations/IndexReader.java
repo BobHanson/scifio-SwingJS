@@ -93,7 +93,7 @@ class IndexReader {
 				String key = readString();
 				expect(':');
 				Object value = next();
-				if (key.startsWith("!")) {
+				if (key.startsWith("!")) { 
 					System.out.println("IndexReader found " + key + ":" + value);
 				}
 				map.put(key, value);

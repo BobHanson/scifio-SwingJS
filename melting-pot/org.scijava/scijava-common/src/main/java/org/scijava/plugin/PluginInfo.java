@@ -291,6 +291,9 @@ public class PluginInfo<PT extends SciJavaPlugin> extends AbstractUIDetails
 
 	@Override
 	public Class<? extends PT> loadClass() throws InstantiableException {
+		// BH 2019.12.29 allows for selective editing of json file 
+		// such that, for example, "class" changes to "!class", and then
+		// the class name comes in as null.
 		if (pluginClass == null && className != null) {
 			try {
 				System.out.println("PluginInfo.loadClass " + className);
