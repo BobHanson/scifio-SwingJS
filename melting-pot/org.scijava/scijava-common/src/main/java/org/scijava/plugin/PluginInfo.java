@@ -332,6 +332,7 @@ public class PluginInfo<PT extends SciJavaPlugin> extends AbstractUIDetails
 	@Override
 	public String getIdentifier() {
 //		try {
+		// BH question: why load the full class here -- during an ArraySort?
 			return "plugin:" + className;//loadClass();
 //		}
 //		catch (final InstantiableException exc) {
