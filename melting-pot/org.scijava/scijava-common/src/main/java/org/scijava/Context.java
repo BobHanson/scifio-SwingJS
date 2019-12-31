@@ -493,12 +493,11 @@ public class Context implements Disposable {
 	private void inject(final Field f, final Object o) {
 		try {
 			f.setAccessible(true); // expose private fields
-
 			final Class<?> type = f.getType();
 			if (Service.class.isAssignableFrom(type)) {
 				final Service existingService = (Service) ClassUtils.getValue(f, o);
 				if (strict && existingService != null) {
-					throw new IllegalStateException("Context already injected: " + //
+					throw new IllegalStateException("Service already injected: " + //
 						f.getDeclaringClass().getName() + "#" + f.getName());
 				}
 
@@ -522,7 +521,7 @@ public class Context implements Disposable {
 				final Context existingContext = (Context) ClassUtils.getValue(f, o);
 				if (strict && existingContext != null) {
 					throw new IllegalStateException("Context already injected: " + //
-						f.getDeclaringClass().getName() + "#" + f.getName());
+						f.getDeclaringClass().getName() + "#" + f.getName() + " " + o.getClass().getName());
 				}
 				if (existingContext != null && existingContext != this) {
 					// NB: Can only happen in non-strict mode.
@@ -537,6 +536,8 @@ public class Context implements Disposable {
 				// the parameter is some other object; if it is non-null, we recurse
 				final Object value = ClassUtils.getValue(f, o);
 				if (value != null) inject(value);
+			} else {
+				// BH - no injection of primitives?
 			}
 		}
 		catch (final Throwable t) {
