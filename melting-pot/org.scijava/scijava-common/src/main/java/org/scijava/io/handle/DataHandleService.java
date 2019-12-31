@@ -35,6 +35,7 @@ package org.scijava.io.handle;
 import java.io.IOException;
 
 import org.scijava.io.IOService;
+import org.scijava.io.location.FileLocation;
 import org.scijava.io.location.Location;
 import org.scijava.plugin.WrapperService;
 import org.scijava.service.SciJavaService;
@@ -71,15 +72,19 @@ public interface DataHandleService extends
 	 *
 	 * @param location the location to test
 	 * @return The result of {@link DataHandle#exists()} on a newly created handle
-	 *         on this location. Also returns {@code false} if the handle can not
-	 *         be created.
+	 *         on this location. Also returns {@code false} if the handle can not be
+	 *         created.
 	 * @throws IOException if the creation of the handle fails exceptionally
 	 */
 	default boolean exists(final Location location) throws IOException {
+		if (location instanceof FileLocation) {
+			return ((FileLocation) location).getFile().exists();
+		}
 		try (DataHandle<Location> handle = create(location)) {
 			return handle == null ? false : handle.exists();
 		}
 	}
+		
 
 	/**
 	 * Wraps the provided {@link DataHandle} in a read-only buffer for accelerated

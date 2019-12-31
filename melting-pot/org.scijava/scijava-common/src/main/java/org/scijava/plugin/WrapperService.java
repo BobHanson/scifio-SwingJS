@@ -70,14 +70,14 @@ public interface WrapperService<DT, PT extends WrapperPlugin<DT>> extends
 	default <D extends DT> PT create(final D data) {
 		final PT instance = find(data);
 		if (instance != null) instance.set(data);
-		// BH hack to open file for writing
-		if (instance instanceof FileHandle)
-//			try {
-				return ((FileHandle) instance).exists() ? instance : null;//.writeBytes("");
-//			} catch (IOException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
+		if (instance instanceof FileHandle) {
+			System.out.println("creating " + data);
+			try {
+				((FileHandle) instance).writeBytes("");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 		return instance;
 	}
 
