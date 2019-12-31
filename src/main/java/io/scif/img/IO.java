@@ -368,14 +368,22 @@ public final class IO {
 	 * Registers the given ImgPlus with the RefManagerService in the provided
 	 * component's Context.
 	 */
-	private static void register(final List<? extends SCIFIOImgPlus> imgPlus,
-		final AbstractImgIOComponent component)
-	{
-		final Context ctx = component.getContext();
-		final RefManagerService refManagerService = ctx.getService(
-			RefManagerService.class);
-		for (final SCIFIOImgPlus<?> img : imgPlus) {
-			refManagerService.manage(img, ctx);
+	private static void register(final List<? extends SCIFIOImgPlus> imgPlus, final AbstractImgIOComponent component) {
+		/**
+		 * JSIssue#12 Sorry, can't access any aspect of garbage collection referencing in JavaScript. Have to depend upon the browser to do its work.
+		 * 
+		 * 
+		 * @j2sNative
+		 * 
+		 * 			return;
+		 * 
+		 */
+		{
+			final Context ctx = component.getContext();
+			final RefManagerService refManagerService = ctx.getService(RefManagerService.class);
+			for (final SCIFIOImgPlus<?> img : imgPlus) {
+				refManagerService.manage(img, ctx);
+			}
 		}
 	}
 
