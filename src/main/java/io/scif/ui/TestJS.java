@@ -8,11 +8,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
 
+import javax.imageio.ImageIO;
+import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -21,22 +24,14 @@ import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.WindowConstants;
 
-import org.scijava.Context;
 import org.scijava.io.DefaultIOService;
-import org.scijava.io.handle.DataHandleService;
 import org.scijava.io.location.FileLocation;
-import org.scijava.io.location.Location;
 
-import io.scif.Format;
-import io.scif.SCIFIO;
-import io.scif.Checker;
 //import io.scif.CheckerTest.FakeChecker;
 import io.scif.config.SCIFIOConfig;
 import io.scif.config.SCIFIOConfig.ImgMode;
 import io.scif.img.IO;
 import io.scif.img.SCIFIOImgPlus;
-import io.scif.services.DefaultFormatService;
-import io.scif.services.FormatService;
 import javajs.async.AsyncFileChooser;
 import net.imagej.ImgPlus;
 import net.imagej.axis.Axes;
@@ -57,6 +52,8 @@ import net.imglib2.view.IntervalView;
 import net.imglib2.view.Views;
 
 public class TestJS {
+
+	private static BufferedImage bi;
 
 	public static void main(final String... args) throws Exception {
 
@@ -93,7 +90,8 @@ public class TestJS {
 				final CompositeXYProjector<UnsignedByteType> proj = new CompositeXYProjector<>(rai, image, converters,
 						-1);
 				proj.map();
-				g.drawImage(image.image(), 0, 0, null);
+				bi = image.image();
+				g.drawImage(bi, 0, 0, null);
 			}
 		};
 		JButton loader = new JButton("Open File");
@@ -102,31 +100,19 @@ public class TestJS {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
 
-				DefaultIOService ioservice = new DefaultIOService();
-				AsyncFileChooser fc = new AsyncFileChooser();
+//				AsyncFileChooser fc = new AsyncFileChooser();
 //				fc.showOpenDialog(frame, new Runnable() {
 //
 //					@Override
 //					public void run() {
 						try {
 							
-							File file = new File("c:/temp/test-ics/benchmark_v1_2018_x64y64z5c2s1t1.ics");//fc.getSelectedFile();
-							Context context = new Context();
-							final SCIFIO scifio = new SCIFIO();
-							final Format f = scifio.format().getFormat(new FileLocation(file));
-							Checker c = f.createChecker();
-							c.setContext(context);
-							DataHandleService dataHandleService = context.getService(DataHandleService.class);
-
-							
-							//config.imgOpenerSetImgModes(ImgMode.AUTO);
-//							File f = new File("c:/temp/test-ics/benchmark_v1_2018_x64y64z5c2s1t1.ics");//fc.getSelectedFile();
-//							Object x = ioservice.open(f.getAbsolutePath());
-//							Format format = service.getFormat(loc, config);
-//							List list = IO.open(loc);
-//							SCIFIOImgPlus img = (SCIFIOImgPlus) list.get(0);
-
-//							display(img);
+							File file = new File("data/out_benchmark_v1_2018_x64y64z5c2s1t1.ids.tif");//fc.getSelectedFile();
+							SCIFIOConfig fmt = new SCIFIOConfig().imgOpenerSetImgModes(ImgMode.AUTO);
+							List list = IO.open(new FileLocation(file), fmt);
+							System.out.println(list.size() + " images found");
+							SCIFIOImgPlus img = (SCIFIOImgPlus) list.get(0);
+							display(img);
 						} catch (Exception e) {
 							e.printStackTrace();
 							System.out.println("???");
@@ -137,9 +123,28 @@ public class TestJS {
 			}
 
 		});
-		contentPane.add(loader, BorderLayout.NORTH);
 		contentPane.add(canvas, BorderLayout.CENTER);
+		JPanel buttons = new JPanel();
+		buttons.setLayout(new BoxLayout(buttons, BoxLayout.X_AXIS));
+		buttons.add(loader);
+		JButton saver = new JButton("Save PNG");
+		saver.addActionListener(new ActionListener() {
 
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					File f = new File("data/test.png");
+					ImageIO.write(bi, "PNG", f);
+					System.out.println("image saved as " + f.getAbsolutePath());
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+				
+			}
+			
+		});
+		buttons.add(saver);
+		contentPane.add(buttons, BorderLayout.NORTH);
 		// With interactivity!
 		final JScrollBar slider = new JScrollBar(Adjustable.HORIZONTAL, 10, 0, 1, 100);
 		slider.addAdjustmentListener(e -> {
@@ -210,7 +215,7 @@ public class TestJS {
 		proj.map();
 
 		// finally, here is the BufferedImage
-		final BufferedImage bi = screenImage.image();
+		bi = screenImage.image();
 
 		// show it!
 		System.out.println("Displaying screen image...");
@@ -218,7 +223,7 @@ public class TestJS {
 		final ImageIcon imageIcon = new ImageIcon(bi, img.getName());
 		frame.getContentPane().setLayout(new BorderLayout());
 		frame.getContentPane().add(new JLabel(imageIcon), BorderLayout.CENTER);
-		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 		frame.pack();
 		frame.setVisible(true);
 	}
