@@ -227,7 +227,7 @@ public class MicromanagerFormat extends AbstractFormat {
 		private boolean checkMetadataHandle(final DataHandle<Location> handle)
 			throws IOException
 		{
-			if (!handle.exists()) return false;
+			if (handle == null || !handle.exists()) return false;
 			final int blockSize = 1048576;
 
 			final long length = handle.length();
