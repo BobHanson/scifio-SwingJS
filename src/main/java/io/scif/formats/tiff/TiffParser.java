@@ -840,7 +840,9 @@ public class TiffParser extends AbstractContextual {
 		}
 
 		final long nrows = numTileRows;
-		if (planarConfig == 2) numTileRows *= samplesPerPixel;
+		// BH 2019.12.31 this was planarConfig == 2 ?? 
+		// that results in an ArrayOutOfBoundsException
+		if (planarConfig != 2) numTileRows *= samplesPerPixel;
 
 		final IntRect imageBounds = new IntRect(x, y, (int) width, (int) height);
 
@@ -1149,6 +1151,7 @@ public class TiffParser extends AbstractContextual {
 		if (bigTiff || fakeBigTiff) {
 			return in.readLong();
 		}
+		// This will not work in JavaScript
 		long offset = (previous & ~0xffffffffL) | (in.readInt() & 0xffffffffL);
 
 		// Only adjust the offset if we know that the file is too large for
