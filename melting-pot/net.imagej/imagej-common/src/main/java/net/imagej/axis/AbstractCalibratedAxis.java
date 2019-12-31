@@ -65,8 +65,9 @@ public abstract class AbstractCalibratedAxis extends DefaultTypedAxis implements
 
 	@Override
 	public double averageScale(final double rawValue1, final double rawValue2) {
-		return (calibratedValue(rawValue2) - calibratedValue(rawValue1)) /
-			(rawValue2 - rawValue1);
+		return (rawValue2 == rawValue1 ? 1 : 
+			(calibratedValue(rawValue2) - calibratedValue(rawValue1)) /
+			(rawValue2 - rawValue1));
 	}
 
 	// -- Object methods --
