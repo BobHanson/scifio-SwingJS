@@ -312,7 +312,8 @@ public class MinimalTIFFFormat extends AbstractFormat {
 		public ColorTable getColorTable(final int imageIndex,
 			final long planeIndex)
 		{
-			if (ifds == null || lastPlane < 0 || lastPlane > ifds.size()) return null;
+			// BH was > not >= here
+			if (ifds == null || lastPlane < 0 || lastPlane >= ifds.size()) return null;
 			IFD lastIFD = ifds.get((int) lastPlane);
 
 			ColorTable table = null;
@@ -559,8 +560,8 @@ public class MinimalTIFFFormat extends AbstractFormat {
 				bounds);
 
 			final IFD firstIFD = ifds.get(0);
-			meta.setLastPlane(planeIndex);
-			final IFD ifd = ifds.get((int) planeIndex);
+			meta.setLastPlane(imageIndex); // BH was planeIndex
+			final IFD ifd = ifds.get((int) imageIndex); // BH was planeIndex
 			if ((firstIFD.getCompression() == TiffCompression.JPEG_2000 || firstIFD
 				.getCompression() == TiffCompression.JPEG_2000_LOSSY) && meta
 					.getResolutionLevels() != null)
