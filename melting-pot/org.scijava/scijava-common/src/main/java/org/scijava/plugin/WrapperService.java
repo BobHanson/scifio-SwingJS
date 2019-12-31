@@ -72,12 +72,12 @@ public interface WrapperService<DT, PT extends WrapperPlugin<DT>> extends
 		if (instance != null) instance.set(data);
 		// BH hack to open file for writing
 		if (instance instanceof FileHandle)
-			try {
-				((FileHandle) instance).writeBytes("");
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+//			try {
+				return ((FileHandle) instance).exists() ? instance : null;//.writeBytes("");
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
 		return instance;
 	}
 
