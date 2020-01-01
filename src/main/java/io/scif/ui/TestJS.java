@@ -22,6 +22,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
+import javax.swing.Timer;
 import javax.swing.WindowConstants;
 
 import org.scijava.io.DefaultIOService;
@@ -48,12 +49,23 @@ import net.imglib2.position.FunctionRandomAccessible;
 import net.imglib2.type.numeric.ARGBType;
 import net.imglib2.type.numeric.RealType;
 import net.imglib2.type.numeric.integer.UnsignedByteType;
+import net.imglib2.type.numeric.integer.UnsignedIntType;
 import net.imglib2.view.IntervalView;
 import net.imglib2.view.Views;
 
 public class TestJS {
 
+	static {
+		
+		// Quick check that UnsignedIntType is working
+		
+		System.out.println(0xFFFFFFFFL == new UnsignedIntType(-1).getIntegerLong());
+
+		System.out.println(0xFFFFFFFFL == new UnsignedIntType(0xFFFFFFFF).getIntegerLong());
+
+	}
 	private static BufferedImage bi;
+	private static Timer timer;
 
 	public static void main(final String... args) throws Exception {
 
@@ -63,9 +75,9 @@ public class TestJS {
 		final UnsignedByteType t = new UnsignedByteType();
 		final Supplier<UnsignedByteType> typeSupplier = () -> t;
 		final BiConsumer<Localizable, UnsignedByteType> function = (l, type) -> {
-			final long x = l.getLongPosition(0);
-			final long y = l.getLongPosition(1);
-			final double result = (Math.cos((double) x / scale[0]) + Math.sin((double) y / scale[0])) / 2;
+			final long x = 200-l.getLongPosition(0) - scale[0]/4;
+			final long y = 200-l.getLongPosition(1) - scale[0]/4;
+			final double result = (Math.cos((double) x / (scale[0]/10.0)) + Math.sin((double) y / (scale[0]/10.0))) / 2;
 			type.setReal((int) (255 * result));
 		};
 		final FunctionRandomAccessible<UnsignedByteType> ra = //
@@ -100,6 +112,7 @@ public class TestJS {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
 
+				timer.stop();
 //				AsyncFileChooser fc = new AsyncFileChooser();
 //				fc.showOpenDialog(frame, new Runnable() {
 //
@@ -133,6 +146,7 @@ public class TestJS {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				try {
+					timer.stop();
 					File f = new File("data/test.png");
 					ImageIO.write(bi, "PNG", f);
 					System.out.println("image saved as " + f.getAbsolutePath());
@@ -146,7 +160,7 @@ public class TestJS {
 		buttons.add(saver);
 		contentPane.add(buttons, BorderLayout.NORTH);
 		// With interactivity!
-		final JScrollBar slider = new JScrollBar(Adjustable.HORIZONTAL, 10, 0, 1, 100);
+		final JScrollBar slider = new JScrollBar(Adjustable.HORIZONTAL, 10, 0, 10, 1000);
 		slider.addAdjustmentListener(e -> {
 			scale[0] = e.getValue();
 			canvas.invalidate();
@@ -156,8 +170,24 @@ public class TestJS {
 
 		frame.setBounds(100, 100, 500, 500);
 		frame.setVisible(true);
+		timer = new Timer(100, new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if (lastValue > 0 && slider.getValue() != lastValue
+						|| slider.getValue() >= 1000) {
+					timer.stop();
+					return;
+				}
+				slider.setValue(Math.min(lastValue = slider.getValue() + 1, 1000));
+			}
+			
+		});
+		timer.start();
 	}
 
+	public static int lastValue = -1;
+	
 	public static <T extends RealType<T>> void display(final ImgPlus<T> img) {
 		// width and height of the raw data
 		// NB: Assumes first two dimensions are [X, Y].

@@ -62,9 +62,11 @@ public class ConvertImg {
 			.getAbsolutePath()), config).get(0);
 		
 		String name = img.getName() + ".tif";
-		final String outPath = file.getParent() + File.separator + "out_" + name;
+		final String outPath = file.getParent() + "out_" + name;
 		System.out.println("saving " + outPath);
-		new ImgSaver(c).saveImg(new FileLocation(outPath), img);
+		FileLocation loc = new FileLocation(outPath);
+		loc.getFile().delete();
+		new ImgSaver(c).saveImg(loc, img);
 		System.out.println("saving complete " + outPath);
 		c.dispose();
 		System.out.println("context disposed");
