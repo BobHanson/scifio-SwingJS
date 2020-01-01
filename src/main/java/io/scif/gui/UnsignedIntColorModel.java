@@ -96,7 +96,7 @@ public class UnsignedIntColorModel extends ColorModel {
 
 	@Override
 	public int getAlpha(final int pixel) {
-		return (int) (Math.pow(2, 32) - 1);
+		return Integer.MAX_VALUE;//(int) (Math.pow(2, 32) - 1);
 	}
 
 	@Override
@@ -116,7 +116,8 @@ public class UnsignedIntColorModel extends ColorModel {
 
 	@Override
 	public int getAlpha(final Object data) {
-		final int max = (int) Math.pow(2, 32) - 1;
+		final int max = Integer.MAX_VALUE;
+		//BH OOPS! - missing parens final int max = (int) Math.pow(2, 32) - 1;
 		if (data instanceof int[]) {
 			final int[] i = (int[]) data;
 			if (i.length == 1) return getAlpha(i[0]);
@@ -127,7 +128,8 @@ public class UnsignedIntColorModel extends ColorModel {
 
 	@Override
 	public int getRed(final Object data) {
-		final int max = (int) Math.pow(2, 32) - 1;
+		final int max = Integer.MAX_VALUE;
+		//BH OOPS! - missing parens final int max = (int) Math.pow(2, 32) - 1;
 		if (data instanceof int[]) {
 			final int[] i = (int[]) data;
 			if (i.length == 1) return getRed(i[0]);
@@ -138,7 +140,7 @@ public class UnsignedIntColorModel extends ColorModel {
 
 	@Override
 	public int getGreen(final Object data) {
-		final int max = (int) Math.pow(2, 32) - 1;
+		final int max = Integer.MAX_VALUE;//(int) Math.pow(2, 32) - 1;
 		if (data instanceof int[]) {
 			final int[] i = (int[]) data;
 			if (i.length == 1) return getGreen(i[0]);
@@ -149,7 +151,7 @@ public class UnsignedIntColorModel extends ColorModel {
 
 	@Override
 	public int getBlue(final Object data) {
-		final int max = (int) Math.pow(2, 32) - 1;
+		final int max = Integer.MAX_VALUE;//(int) Math.pow(2, 32) - 1;
 		if (data instanceof int[]) {
 			final int[] i = (int[]) data;
 			if (i.length == 1) return getBlue(i[0]);
@@ -160,11 +162,34 @@ public class UnsignedIntColorModel extends ColorModel {
 
 	// -- Helper methods --
 
+	// BH Notes: The Compiler does not optimize out Math.pow(2,32). 
+	// from the class file:
+//	
+//	  public int getAlpha(int pixel);
+//	     0  ldc2_w <Double 2.0> [101]
+//	     3  ldc2_w <Double 32.0> [103]
+//	     6  invokestatic java.lang.Math.pow(double, double) : double [105]
+
+	    		 
+	    		 
 	private int getComponent(final int pixel) {
-		final long v = pixel & 0xffffffffL;
-		double f = v / (Math.pow(2, 32) - 1);
-		f *= 255;
+		final long v = uint(pixel);
+		double f = v * 1.0 / 0xFFFFFFFFL; // not needed: (Math.pow(2, 32) - 1);
+		f *= 255; 
 		return (int) f;
+	}
+
+    static long[] uia = /** @j2sNative new Uint32Array(1) || */null;
+
+    private static long uint(int i) {
+    	/**
+    	 * @j2sNative 
+    	 * 
+    	 * return (uia[0] = i, uia[0]);
+    	 */
+    	{
+    		return 0xFFFFFFFFL & i;
+    	}
 	}
 
 	private static int[] makeBitArray(final int nChannels, final int nBits) {

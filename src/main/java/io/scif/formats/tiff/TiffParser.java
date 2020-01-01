@@ -1142,17 +1142,33 @@ public class TiffParser extends AbstractContextual {
 		}
 	}
 
+	private static long[] uint = /**@j2sNative new Uint32Array(1) || */new long[1];
 	/**
-	 * Read a file offset. For bigTiff, a 64-bit number is read. For other Tiffs,
-	 * a 32-bit number is read and possibly adjusted for a possible carry-over
-	 * from the previous offset.
+	 * Read a file offset. For bigTiff, a 64-bit number is read. For other Tiffs, a
+	 * 32-bit number is read and possibly adjusted for a possible carry-over from
+	 * the previous offset.
 	 */
 	private long getNextOffset(final long previous) throws IOException {
 		if (bigTiff || fakeBigTiff) {
 			return in.readLong();
 		}
 		// This will not work in JavaScript
-		long offset = (previous & ~0xffffffffL) | (in.readInt() & 0xffffffffL);
+//		long offset = (previous & ~0xffffffffL) | (in.readInt() & 0xffffffffL);
+
+		long offset = in.readInt();
+
+		/**
+		 * 
+		 * No bitwise operations on long in JavaScript
+		 * 
+		 * @j2sNative
+		 * 
+		 * 
+		 * 	offset = (previous/0x100000000|0)*0x100000000 + (C$.uint[0] = offset, C$.uint[0]);
+		 */
+		{
+			offset = (previous & ~0xffffffffL) | (offset & 0xffffffffL);
+		}
 
 		// Only adjust the offset if we know that the file is too large for
 		// 32-bit

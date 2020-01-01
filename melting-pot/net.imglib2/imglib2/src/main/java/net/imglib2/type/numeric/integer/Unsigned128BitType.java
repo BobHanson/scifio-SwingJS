@@ -47,6 +47,9 @@ import net.imglib2.type.numeric.NumericType;
 import net.imglib2.util.Fraction;
 import net.imglib2.util.Util;
 
+// BH SwingJS -- in JavaScript we would need a BigInteger implementation of this. 
+// we can swap that in at compile time.
+
 /**
  * A {@link Type} with a bit depth of 128. Each value is stored in two adjacent
  * long in an array, with the lower long first, then the upper long. Currently
@@ -189,7 +192,8 @@ public class Unsigned128BitType extends AbstractIntegerType< Unsigned128BitType 
 	@Override
 	public int getInteger()
 	{
-		return ( int ) ( dataAccess.getValue( i * 2 ) & 0xffffffffL );
+		// BH 
+		return ( int ) dataAccess.getValue( i * 2 );// & 0xffffffffL );
 	}
 
 	/** Return the lowest 64 bits, like {@link BigInteger#intValue()}. */
@@ -323,13 +327,17 @@ public class Unsigned128BitType extends AbstractIntegerType< Unsigned128BitType 
 	@Override
 	public void inc()
 	{
+		// DEFINITELY not going to work in JavaScript!
+		// just noting that 0xFFFFFFFFFFFFFFFFL is -1. 
 		final int k = i * 2;
 		final long lower = dataAccess.getValue( k );
-		if ( 0xffffffffffffffffL == lower )
+		if ( //0xffffffffffffffffL
+				-1L == lower )
 		{
 			dataAccess.setValue( k, 0 );
 			final long upper = dataAccess.getValue( k + 1 );
-			if ( 0xffffffffffffffffL == upper )
+			if ( //0xffffffffffffffffL 
+					-1L == upper )
 			{
 				dataAccess.setValue( k + 1, 0 );
 			}
@@ -351,11 +359,11 @@ public class Unsigned128BitType extends AbstractIntegerType< Unsigned128BitType 
 		final long lower = dataAccess.getValue( k );
 		if ( 0 == lower )
 		{
-			dataAccess.setValue( k, 0xffffffffffffffffL );
+			dataAccess.setValue( k, -1);//0xffffffffffffffffL );
 			final long upper = dataAccess.getValue( k + 1 );
 			if ( 0 == upper )
 			{
-				dataAccess.setValue( k + 1, 0xffffffffffffffffL );
+				dataAccess.setValue( k + 1, -1);// 0xffffffffffffffffL );
 			}
 			else
 			{
@@ -430,6 +438,7 @@ public class Unsigned128BitType extends AbstractIntegerType< Unsigned128BitType 
 	{
 		final long upper1 = dataAccess.getValue( i * 2 + 1 );
 		final long upper2 = t.dataAccess.getValue( t.i * 2 + 1 );
+		// BH SwingJS does not support Long.compareUnsigned
 		final int compareUpper = Long.compareUnsigned( upper1, upper2 );
 		if ( compareUpper != 0 )
 			return compareUpper;

@@ -85,14 +85,22 @@ public class UnsignedIntType extends GenericIntType< UnsignedIntType >
 
 	public static int getCodedSignedInt( final long unsignedInt )
 	{
-		return ( int ) ( unsignedInt & 0xffffffff );
+		return ( int ) unsignedInt;
 	}
 
-	public static long getUnsignedInt( final int signedInt )
-	{
-		return signedInt & 0xffffffffL;
+	static long[] uia = /** @j2sNative new Uint32Array(1) || */null;
+	
+	public static long getUnsignedInt(final int signedInt) {
+		/**
+		 * @j2sNative
+		 * 
+		 * 			return C$.uia[0] = signedInt, C$.uia[0];
+		 */
+		{
+			return 0xFFFFFFFFL & signedInt;
+		}
 	}
-
+	
 	@Override
 	public UnsignedIntType duplicateTypeOnSameNativeImg()
 	{

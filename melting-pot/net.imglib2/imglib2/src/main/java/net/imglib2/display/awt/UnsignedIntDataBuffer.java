@@ -77,6 +77,9 @@ public class UnsignedIntDataBuffer extends DataBuffer
 		return getElem( 0, i );
 	}
 
+	
+	// BH note: Very curious, the next few methods:
+	
 	@Override
 	public int getElem( final int bank, final int i )
 	{
