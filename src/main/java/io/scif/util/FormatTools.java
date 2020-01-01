@@ -1109,15 +1109,15 @@ public final class FormatTools {
 				break;
 			case UINT8:
 				min = 0;
-				max = (long) Math.pow(2, 8) - 1;
+				max = 0xFF;//(long) Math.pow(2, 8) - 1;
 				break;
 			case UINT16:
 				min = 0;
-				max = (long) Math.pow(2, 16) - 1;
+				max = 0xFFFF;//(long) Math.pow(2, 16) - 1;
 				break;
 			case UINT32:
 				min = 0;
-				max = (long) Math.pow(2, 32) - 1;
+				max = 0xFFFFFFFFL;//(long) Math.pow(2, 32) - 1;
 				break;
 			default:
 				throw new IllegalArgumentException("Invalid pixel type");
