@@ -110,6 +110,7 @@ public class DefaultStatusService extends AbstractService implements
 	 */
 	protected void publish(final StatusEvent statusEvent)
 	{
+		System.out.println("DefaultStatusService.publish " + statusEvent.getStatusMessage());
 		eventService.publishLater(statusEvent);
 	}
 
