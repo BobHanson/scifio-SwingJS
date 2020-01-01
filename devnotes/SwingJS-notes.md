@@ -5,6 +5,30 @@ Most tweaks of the code can be found by searching for "@j2s" in the code.
 
 In opposite order of discovery of the problem during development.
 
+14. 2020.01.01
+
+io.scif.formats.tiff.TiffParser
+io.net.imagelib2.type.numeric.integer.UnsignedIntType
+net.imglib2.type.numeric.integer.UnsignedInt128BitType
+io.scif.gui.UnsignedIntColorModel
+
+This will not work in JavaScript:
+
+		long offset = (previous & ~0xffffffffL) | (in.readInt() & 0xffffffffL);
+
+Neither longValue & ~0xffffffff nor intValue & 0xFFFFFFFF work in JavaScript.
+
+For the first, we need to use:
+
+ x/C|0*C  where c == 0x100000000 
+ 
+and, for the second, we need a pass through a Uint32Array:
+ 
+ (uia[0]=intValue,uia[0])   where uia is a static new Uint32Array(1) 
+
+In addition, in converting from long x to int, all that is needed is (int) x; 
+anding with 0xFFFFFFFF does nothing to an int.
+
 13. 2019.12.31 io.scif.AbstractFormat#UpdateCustomClasses should skip abstract classes:
 
 	private void updateCustomClasses() {

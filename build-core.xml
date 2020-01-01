@@ -109,9 +109,12 @@
 
    	<echo>creating and compressing core files - warnings are OK; "does not exist" is trouble</echo>
    	<echo>reading core class list from file coreclasses</echo>   	
-   	<loadresource property="coreclasses">
-       <file file="${j2s.class.list.file}"/>
-    </loadresource>
+   	<loadfile srcfile="${j2s.class.list.file}" property="coreclasses">
+   	  <filterchain>
+   	    <sortfilter/>
+   	    <uniqfilter/>
+   	  </filterchain>
+   	</loadfile>
     <resourcecount property="line.count" count="0" when="eq">
       <tokens>
         <concat>
@@ -125,7 +128,9 @@
       </tokens>
     </resourcecount>
     <echo message="${j2s.class.list.file} has ${line.count} unique lines" />
-   	
+
+    <!-- echo message="${coreclasses}" / -->
+
    	<!-- not including			core/coreswingjs.js -->
    	
     <antcall target="call-core">
