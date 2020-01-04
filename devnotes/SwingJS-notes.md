@@ -50,28 +50,9 @@ As a result org.imagej.axis.VariableAxis.getParticularEquation needed
 modification to use (?=\\W) instead of (?<=\\w)(?=\\W)|(?<=\\W)(?=\\w)
 -- that is, split just before any operator, not at the end|start of words. 
 
-10. 2019.12.20  The java2script transpiler cannot handle this.<P> in a method call, as in AbstractReader:
-
-		return openPlane(imageIndex, planeIndex, this.<P> castToTypedPlane(plane),
-			config);
-
-
-This call will use the generic "$TP" for the third parameter. But the call it is making is to a subclass that could have ByteArrayImagePlane or BufferedImagePlane, as in:
-
-
-		@Override
-		public BufferedImagePlane openPlane(final int imageIndex,
-			final long planeIndex, final BufferedImagePlane plane,
-			final Interval bounds, final SCIFIOConfig config) throws FormatException,
-			IOException
-		{...}
-
-Adding 
-
-		/** @j2sAlias *,*,P,*,* */ 
-
-prior to the @Override instructs the transpiler to supply an alias for that method -- a second name that uses $TP instead of $io\_scif\_ByteArrayPlane.
-
+10. 2019.12.20  The java2script transpiler cannot handle this.<P>
+    2020.01.03  Actually, it can...
+    
 9. 2019.12.20 SCIFIOCellImgFactory
 
 Could not be implemented in Java 8; unnecessary for java2script? Errors are still there; don't know how to adjust for that.
