@@ -151,7 +151,7 @@ public abstract class ImageIOFormat extends AbstractFormat {
 
 		// -- Reader API methods --
 
-		/** @j2sAlias *,*,P,*,* */ 
+		 
 		@Override
 		public BufferedImagePlane openPlane(final int imageIndex,
 			final long planeIndex, final BufferedImagePlane plane,

@@ -543,7 +543,7 @@ public class APNGFormat extends AbstractFormat {
 			super.setMetadata(meta);
 		}
 
-		/** @j2sAlias *,*,P,*,* */ 
+		 
 		@Override
 		public BufferedImagePlane openPlane(final int imageIndex,
 			final long planeIndex, final BufferedImagePlane plane,

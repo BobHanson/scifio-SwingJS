@@ -290,7 +290,7 @@ public class MNGFormat extends AbstractFormat {
 
 		// -- Reader API Methods --
 
-		/** @j2sAlias *,*,P,*,* */ 
+		 
 		@Override
 		public BufferedImagePlane openPlane(final int imageIndex,
 			final long planeIndex, final BufferedImagePlane plane,

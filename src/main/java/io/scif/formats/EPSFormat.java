@@ -323,7 +323,7 @@ public class EPSFormat extends AbstractFormat {
 
 		// -- Reader API Methods --
 
-		/** @j2sAlias *,*,P,*,* */ 
+		 
 		@Override
 		public ByteArrayPlane openPlane(final int imageIndex, final long planeIndex,
 			final ByteArrayPlane plane, final Interval bounds,

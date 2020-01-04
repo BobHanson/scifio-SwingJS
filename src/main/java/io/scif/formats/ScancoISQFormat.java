@@ -561,7 +561,7 @@ public class ScancoISQFormat extends AbstractFormat {
 			return new String[] { FormatTools.MEDICAL_DOMAIN };
 		}
 
-		/** @j2sAlias *,*,P,*,* */ 
+		 
 		@Override
 		public ByteArrayPlane openPlane(final int imageIndex, final long planeIndex,
 			final ByteArrayPlane plane, final Interval bounds,

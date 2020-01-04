@@ -1388,7 +1388,7 @@ public class DICOMFormat extends AbstractFormat {
 			return true;
 		}
 
-		/** @j2sAlias *,*,P,*,* */ 
+		 
 		@Override
 		public ByteArrayPlane openPlane(final int imageIndex, long planeIndex,
 			final ByteArrayPlane plane, final Interval bounds,

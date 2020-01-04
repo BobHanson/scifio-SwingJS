@@ -174,7 +174,7 @@ public class KontronFormat extends AbstractFormat {
 			return new String[] { FormatTools.SEM_DOMAIN };
 		}
 
-		/** @j2sAlias *,*,P,*,* */ 
+		 
 		@Override
 		public ByteArrayPlane openPlane(final int imageIndex, final long planeIndex,
 			final ByteArrayPlane plane, final Interval bounds,
