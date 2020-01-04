@@ -1,3 +1,6 @@
+javax/net/ssl/HttpsURLConnection.js
+net/imglib2/type/numeric/integer/GenericIntType.js
+net/imglib2/type/numeric/integer/UnsignedIntType.js
 io/scif/AbstractChecker.js
 io/scif/AbstractFormat.js
 io/scif/AbstractGroupable.js
