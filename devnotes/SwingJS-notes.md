@@ -5,7 +5,7 @@ Most tweaks of the code can be found by searching for "@j2s" in the code.
 
 In opposite order of discovery of the problem during development.
 
-14. 2020.01.01
+13. 2020.01.01
 
 io.scif.formats.tiff.TiffParser
 io.net.imagelib2.type.numeric.integer.UnsignedIntType
@@ -29,7 +29,7 @@ and, for the second, we need a pass through a Uint32Array:
 In addition, in converting from long x to int, all that is needed is (int) x; 
 anding with 0xFFFFFFFF does nothing to an int.
 
-13. 2019.12.31 io.scif.AbstractFormat#UpdateCustomClasses should skip abstract classes:
+12. 2019.12.31 io.scif.AbstractFormat#UpdateCustomClasses should skip abstract classes:
 
 	private void updateCustomClasses() {
 
@@ -42,16 +42,16 @@ anding with 0xFFFFFFFF does nothing to an int.
     
 The problem was with TIFFFormat, which has two parsers, and SwingJS returns the list of declared classes in a different order than the Eclipse Java compiler (or runtime?).
 
-12. 2019.12.30 IO.Register bypassed as unnecessary in SwingJS; can't make PhantomReferences. 
+11. 2019.12.30 IO.Register bypassed as unnecessary in SwingJS; can't make PhantomReferences. 
 
 
-11. 2019.12.29 Firefox does not recognize Regex look-behind ...(?<=...)...
+10. 2019.12.29 Firefox does not recognize Regex look-behind ...(?<=...)...
 As a result org.imagej.axis.VariableAxis.getParticularEquation needed
 modification to use (?=\\W) instead of (?<=\\w)(?=\\W)|(?<=\\W)(?=\\w)
 -- that is, split just before any operator, not at the end|start of words. 
 
-10. 2019.12.20  The java2script transpiler cannot handle this.<P>
-    2020.01.03  Actually, it can...
+// 10. 2019.12.20  The java2script transpiler cannot handle this.<P>
+//    2020.01.03  Actually, it can now...
     
 9. 2019.12.20 SCIFIOCellImgFactory
 
@@ -78,13 +78,15 @@ Could not be implemented in Java 8; unnecessary for java2script? Errors are stil
 
 Removed unnecessary check for apache logging (which is a HUGE and complicated set of classes)
 
-6. 2019.12.19 DefaultPluginFinder 
+6. 2019.12.19 DefaultPluginFinder (general Java fix; not related to JavaScript)
 
 Moved two lines of code to straighten out loading
 
 5. 2019.12.19 DefaultXMLService
 
-Added lazy loading of www XML schema.
+Added lazy (unnecessary) loading of www XML schema. 
+SwingJS doesn't support XML schema checking. 
+Presumption that validation would be in Java.
 
 4. 2019.12.18 org.scijava.util.Types
 
