@@ -51,15 +51,34 @@ public class ConvertImg {
 
 	static boolean j2sHeadless = true;
 
-	private static void convertImg(final File file) throws Exception {
+	/**
+	 * @j2sAlias readImage
+	 * @param jsBytes
+	 * @return
+	 */
+	public static Object readImage(byte[] jsBytes) {
+		File file = new File("秘jsFile");
+		/**
+		 * @j2sNative
+		 * 
+		 * 		file.秘bytes = jsBytes;
+		 */
+		
+		final Context c = new Context(Context.INIT_SERVICES | Context.INIT_PLUGINS | Context.INIT_NOT_STRICT | Context.INIT_NOT_DEFERRED);
+		final SCIFIOConfig config = new SCIFIOConfig().imgOpenerSetImgModes(
+			ImgMode.ARRAY);
+		final ImgPlus<?> img = new ImgOpener(c)
+				.openImgs(new FileLocation(file), config).get(0);
+		return img;
+	}
+	
+	public static void convertImg(final File file) throws Exception {
 		final Context c = new Context(Context.INIT_SERVICES | Context.INIT_PLUGINS | Context.INIT_NOT_STRICT | Context.INIT_NOT_DEFERRED);
 		final SCIFIOConfig config = new SCIFIOConfig().imgOpenerSetImgModes(
 			ImgMode.ARRAY);
 		System.out.println("reading " + file);
-		Class<?> cl = ImgOpener.class;
 		final ImgPlus<?> img = new ImgOpener(c)
-				.openImgs(new FileLocation(file
-			.getAbsolutePath()), config).get(0);
+				.openImgs(new FileLocation(file), config).get(0);
 		
 		String name = img.getName() + ".tif";
 		final String outPath = file.getParent() + "out_" + name;
