@@ -29,18 +29,17 @@
 
 package io.scif.img;
 
-import io.scif.config.SCIFIOConfig;
-import io.scif.config.SCIFIOConfig.ImgMode;
-import io.scif.gui.ImageViewer;
-
 import java.io.File;
-
-import javax.swing.JFileChooser;
-
-import net.imagej.ImgPlus;
+import java.io.IOException;
+import java.nio.file.Files;
 
 import org.scijava.Context;
+import org.scijava.io.location.BytesLocation;
 import org.scijava.io.location.FileLocation;
+
+import io.scif.config.SCIFIOConfig;
+import io.scif.config.SCIFIOConfig.ImgMode;
+import net.imagej.ImgPlus;
 
 /**
  * A simple manual test opening and saving {@link ImgPlus}es.
@@ -51,24 +50,28 @@ public class ConvertImg {
 
 	static boolean j2sHeadless = true;
 
+	
+	public static void checkBytes() {
+		try {
+			byte[] bytes = Files.readAllBytes(new File("data/out_benchmark_v1_2018_x64y64z5c2s1t1.ids.tif").toPath());
+			System.err.println("bytes " + bytes.length);
+			ImgPlus<?> o = readImage(bytes);
+			System.err.println(o.getImg());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 	/**
 	 * @j2sAlias readImage
 	 * @param jsBytes
 	 * @return
 	 */
-	public static Object readImage(byte[] jsBytes) {
-		File file = new File("秘jsFile");
-		/**
-		 * @j2sNative
-		 * 
-		 * 		file.秘bytes = jsBytes;
-		 */
-		
+	public static ImgPlus<?> readImage(byte[] jsBytes) {
+		BytesLocation loc = new BytesLocation(jsBytes);
 		final Context c = new Context(Context.INIT_SERVICES | Context.INIT_PLUGINS | Context.INIT_NOT_STRICT | Context.INIT_NOT_DEFERRED);
 		final SCIFIOConfig config = new SCIFIOConfig().imgOpenerSetImgModes(
 			ImgMode.ARRAY);
-		final ImgPlus<?> img = new ImgOpener(c)
-				.openImgs(new FileLocation(file), config).get(0);
+		final ImgPlus<?> img = new ImgOpener(c).openImgs(loc, config).get(0);
 		return img;
 	}
 	
@@ -76,23 +79,24 @@ public class ConvertImg {
 		final Context c = new Context(Context.INIT_SERVICES | Context.INIT_PLUGINS | Context.INIT_NOT_STRICT | Context.INIT_NOT_DEFERRED);
 		final SCIFIOConfig config = new SCIFIOConfig().imgOpenerSetImgModes(
 			ImgMode.ARRAY);
-		System.out.println("reading " + file);
+		System.err.println("reading " + file);
 		final ImgPlus<?> img = new ImgOpener(c)
 				.openImgs(new FileLocation(file), config).get(0);
 		
 		String name = img.getName() + ".tif";
 		final String outPath = file.getParent() + "out_" + name;
-		System.out.println("saving " + outPath);
+		System.err.println("saving " + outPath);
 		FileLocation loc = new FileLocation(outPath);
 		loc.getFile().delete();
 		new ImgSaver(c).saveImg(loc, img);
-		System.out.println("saving complete " + outPath);
+		System.err.println("saving complete " + outPath);
 		c.dispose();
-		System.out.println("context disposed");
+		System.err.println("context disposed");
 	}
 
 	public static void main(final String[] args) throws Exception {
 		
+		checkBytes();
 		File file = new File("data/benchmark_v1_2018_x64y64z5c2s1t1.ics");
 		System.out.println("reading " + file.getAbsolutePath());
 		convertImg(file);
